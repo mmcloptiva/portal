@@ -1,0 +1,1426 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_Accounts_types_1_1.xsd', 
+				'properties_AccountProfileCreationException', 
+				'properties_MutableAccountDetail', 
+				'properties_AccountBalance', 
+				'properties_PostpaidAccountBalance');
+var usedByBoxes= new Array('usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException', 
+				'usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail', 
+				'usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance', 
+				'usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance', 
+				'usedBy_BaseAccountExtensionReference', 
+				'usedBy_BaseMutableAccountExtension');
+var sourceBoxes= new Array('source_AccountProfileCreationException', 
+				'source_MutableAccountDetail', 
+				'source_AccountBalance', 
+				'source_PostpaidAccountBalance', 
+				'source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException', 
+				'source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail', 
+				'source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance', 
+				'source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance', 
+				'source_BaseAccountExtensionReference', 
+				'source_BaseMutableAccountExtension');
+var instanceBoxes= new Array('instance_AccountProfileCreationException', 
+				'instance_MutableAccountDetail', 
+				'instance_PostpaidAccountBalance');
+var diagramBoxes= new Array('diagram_AccountProfileCreationException', 
+				'diagram_MutableAccountDetail', 
+				'diagram_AccountBalance', 
+				'diagram_PostpaidAccountBalance', 
+				'diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException', 
+				'diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail', 
+				'diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance', 
+				'diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance', 
+				'diagram_BaseAccountExtensionReference', 
+				'diagram_BaseMutableAccountExtension');
+var modelBoxes= new Array('model_AccountProfileCreationException', 
+				'model_MutableAccountDetail', 
+				'model_AccountBalance', 
+				'model_PostpaidAccountBalance', 
+				'model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException', 
+				'model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail', 
+				'model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance', 
+				'model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance', 
+				'model_BaseAccountExtensionReference', 
+				'model_BaseMutableAccountExtension');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="Accounts_types_1_1.xsd"></a><div class="componentTitle">Imported schema <span class="qname">Accounts_types_1_1.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_Accounts_types_1_1.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_Accounts_types_1_1.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_Accounts_types_1_1.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="AccountProfileCreationException"></a><div class="componentTitle">Element <span class="qname">accountdtns:AccountProfileCreationException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_AccountProfileCreationException" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Element_accountdtns_AccountProfileCreationException.jpeg" usemap="#Accounts_types_1_1_xsd_Element_accountdtns_AccountProfileCreationException" /><map name="Accounts_types_1_1_xsd_Element_accountdtns_AccountProfileCreationException" id="Accounts_types_1_1_xsd_Element_accountdtns_AccountProfileCreationException"><area alt="Accounts_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" coords="240,3,539,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountProfileCreationException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b><ul class="internal">
+                                          <li class="internal"><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountProfileCreationException</a></b></li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_AccountProfileCreationException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_AccountProfileCreationException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileCreated</b> , <b>accountdtns:identifier{0,1}</b> , <b>accountdtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>accountdtns:identifier</b>, <b>accountdtns:state</b>, <b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileCreated</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_AccountProfileCreationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;accountdtns:AccountProfileCreationException</span><span class="tT"> </span><span class="tAN">xmlns:accountdtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06"</span><span class="tT"> </span><span class="tAN">xmlns:exns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;exns:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/exns:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;exns:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/exns:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;exns:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/exns:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;exns:profileCreated</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/exns:profileCreated&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:state&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/accountdtns:AccountProfileCreationException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_AccountProfileCreationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"AccountProfileCreationException"</span><span class="tAN"> type=</span><span class="tAV">"accountdtns:AccountProfileCreationException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="MutableAccountDetail"></a><div class="componentTitle">Element <span class="qname">accountdtns:MutableAccountDetail</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_MutableAccountDetail" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Element_accountdtns_MutableAccountDetail.jpeg" usemap="#Accounts_types_1_1_xsd_Element_accountdtns_MutableAccountDetail" /><map name="Accounts_types_1_1_xsd_Element_accountdtns_MutableAccountDetail" id="Accounts_types_1_1_xsd_Element_accountdtns_MutableAccountDetail"><area alt="Accounts_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" coords="179,3,417,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:MutableAccountDetail</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_MutableAccountDetail" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('model_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_MutableAccountDetail" style="display:block"><b>accountdtns:accountManager{0,1}</b> , <b>accountdtns:currency{0,1}</b> , <b>accountdtns:greeting{0,1}</b> , <b>accountdtns:icm{0,1}</b> , <b>accountdtns:language{0,1}</b> , <b>accountdtns:ownerMobileNumber{0,1}</b> , <b>accountdtns:blockingTemplate{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>accountdtns:accountManager</b>, <b>accountdtns:blockingTemplate</b>, <b>accountdtns:currency</b>, <b>accountdtns:greeting</b>, <b>accountdtns:icm</b>, <b>accountdtns:language</b>, <b>accountdtns:ownerMobileNumber</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_MutableAccountDetail" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;accountdtns:MutableAccountDetail</span><span class="tT"> </span><span class="tAN">xmlns:accountdtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:accountManager</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:accountManager&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:currency</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:currency&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:greeting</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:greeting&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:icm</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:icm&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:language</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:language&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:ownerMobileNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:ownerMobileNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:blockingTemplate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:blockingTemplate&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/accountdtns:MutableAccountDetail&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('source_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_MutableAccountDetail" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"MutableAccountDetail"</span><span class="tAN"> type=</span><span class="tAV">"accountdtns:MutableAccountDetail"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="AccountBalance"></a><div class="componentTitle">Element <span class="qname">accountdtns:AccountBalance</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_AccountBalance" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Element_accountdtns_AccountBalance.jpeg" usemap="#Accounts_types_1_1_xsd_Element_accountdtns_AccountBalance" /><map name="Accounts_types_1_1_xsd_Element_accountdtns_AccountBalance" id="Accounts_types_1_1_xsd_Element_accountdtns_AccountBalance"><area alt="Accounts_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" coords="147,3,353,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountBalance</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_AccountBalance" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('model_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_AccountBalance" style="display:block"></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('source_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_AccountBalance" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"AccountBalance"</span><span class="tAN"> type=</span><span class="tAV">"accountdtns:AccountBalance"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="PostpaidAccountBalance"></a><div class="componentTitle">Element <span class="qname">accountdtns:PostpaidAccountBalance</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_PostpaidAccountBalance" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Element_accountdtns_PostpaidAccountBalance.jpeg" usemap="#Accounts_types_1_1_xsd_Element_accountdtns_PostpaidAccountBalance" /><map name="Accounts_types_1_1_xsd_Element_accountdtns_PostpaidAccountBalance" id="Accounts_types_1_1_xsd_Element_accountdtns_PostpaidAccountBalance"><area alt="Accounts_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" coords="207,43,505,65" /><area alt="Accounts_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" coords="193,3,445,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:PostpaidAccountBalance</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountBalance</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:PostpaidAccountBalance</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_PostpaidAccountBalance" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('model_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_PostpaidAccountBalance" style="display:block"><b>accountdtns:lastInvoiceAmount{0,1}</b> , <b>accountdtns:paymentsSinceLastInvoice{0,1}</b> , <b>accountdtns:adjustmentsSinceLastInvoice{0,1}</b> , <b>accountdtns:writtenOffBalance{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>accountdtns:adjustmentsSinceLastInvoice</b>, <b>accountdtns:lastInvoiceAmount</b>, <b>accountdtns:paymentsSinceLastInvoice</b>, <b>accountdtns:writtenOffBalance</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_PostpaidAccountBalance" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;accountdtns:PostpaidAccountBalance</span><span class="tT"> </span><span class="tAN">xmlns:accountdtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:lastInvoiceAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:lastInvoiceAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:paymentsSinceLastInvoice</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:paymentsSinceLastInvoice&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:adjustmentsSinceLastInvoice</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:adjustmentsSinceLastInvoice&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;accountdtns:writtenOffBalance</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/accountdtns:writtenOffBalance&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/accountdtns:PostpaidAccountBalance&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('source_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_PostpaidAccountBalance" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"PostpaidAccountBalance"</span><span class="tAN"> type=</span><span class="tAV">"accountdtns:PostpaidAccountBalance"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException"></a><div class="componentTitle">Complex Type <span class="qname">accountdtns:AccountProfileCreationException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Complex_Type_accountdtns_AccountProfileCreationException.jpeg" usemap="#Accounts_types_1_1_xsd_Complex_Type_accountdtns_AccountProfileCreationException" /><map name="Accounts_types_1_1_xsd_Complex_Type_accountdtns_AccountProfileCreationException" id="Accounts_types_1_1_xsd_Complex_Type_accountdtns_AccountProfileCreationException"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b><ul class="internal">
+                                          <li class="internal"><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountProfileCreationException</a></b></li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Accounts_types_1_1_xsd.html#AccountProfileCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountProfileCreationException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileCreated</b> , <b>accountdtns:identifier{0,1}</b> , <b>accountdtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>accountdtns:identifier</b>, <b>accountdtns:state</b>, <b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileCreated</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountProfileCreationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"AccountProfileCreationException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"exns:DataCreationException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"identifier"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"state"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"accountv1_0dtns:AccountState"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail"></a><div class="componentTitle">Complex Type <span class="qname">accountdtns:MutableAccountDetail</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Complex_Type_accountdtns_MutableAccountDetail.jpeg" usemap="#Accounts_types_1_1_xsd_Complex_Type_accountdtns_MutableAccountDetail" /><map name="Accounts_types_1_1_xsd_Complex_Type_accountdtns_MutableAccountDetail" id="Accounts_types_1_1_xsd_Complex_Type_accountdtns_MutableAccountDetail"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Accounts_types_1_1_xsd.html#MutableAccountDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:MutableAccountDetail</a></b>, <b>tns:updateAccountProfile/tns:detail</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="Accounts_types_2_0_xsd.html#AccountDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2011/01" onclick="updatePageTitle('Documentation for Accounts_types_2_0.xsd')">accountdtns:AccountDetail</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" style="display:block"><b>accountdtns:accountManager{0,1}</b> , <b>accountdtns:currency{0,1}</b> , <b>accountdtns:greeting{0,1}</b> , <b>accountdtns:icm{0,1}</b> , <b>accountdtns:language{0,1}</b> , <b>accountdtns:ownerMobileNumber{0,1}</b> , <b>accountdtns:blockingTemplate{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>accountdtns:accountManager</b>, <b>accountdtns:blockingTemplate</b>, <b>accountdtns:currency</b>, <b>accountdtns:greeting</b>, <b>accountdtns:icm</b>, <b>accountdtns:language</b>, <b>accountdtns:ownerMobileNumber</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_MutableAccountDetail" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"MutableAccountDetail"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"accountManager"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"currency"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"greeting"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"icm"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"language"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ownerMobileNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"blockingTemplate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance"></a><div class="componentTitle">Complex Type <span class="qname">accountdtns:AccountBalance</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Complex_Type_accountdtns_AccountBalance.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Accounts_types_1_1_xsd.html#AccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountBalance</a></b>, <b>tns:getDetailedAccountBalancesResponse/tns:return</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:PostpaidAccountBalance</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" style="display:block"></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"AccountBalance"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance"></a><div class="componentTitle">Complex Type <span class="qname">accountdtns:PostpaidAccountBalance</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Complex_Type_accountdtns_PostpaidAccountBalance.jpeg" usemap="#Accounts_types_1_1_xsd_Complex_Type_accountdtns_PostpaidAccountBalance" /><map name="Accounts_types_1_1_xsd_Complex_Type_accountdtns_PostpaidAccountBalance" id="Accounts_types_1_1_xsd_Complex_Type_accountdtns_PostpaidAccountBalance"><area alt="Accounts_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" coords="217,3,515,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountBalance</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_AccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:AccountBalance</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Accounts_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:PostpaidAccountBalance</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Accounts_types_1_1_xsd.html#PostpaidAccountBalance" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06" onclick="updatePageTitle('Documentation for Accounts_types_1_1.xsd')">accountdtns:PostpaidAccountBalance</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" style="display:block"><b>accountdtns:lastInvoiceAmount{0,1}</b> , <b>accountdtns:paymentsSinceLastInvoice{0,1}</b> , <b>accountdtns:adjustmentsSinceLastInvoice{0,1}</b> , <b>accountdtns:writtenOffBalance{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>accountdtns:adjustmentsSinceLastInvoice</b>, <b>accountdtns:lastInvoiceAmount</b>, <b>accountdtns:paymentsSinceLastInvoice</b>, <b>accountdtns:writtenOffBalance</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_accounts_xsd_2010_06_PostpaidAccountBalance" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"PostpaidAccountBalance"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"accountdtns:AccountBalance"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"lastInvoiceAmount"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"paymentsSinceLastInvoice"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"adjustmentsSinceLastInvoice"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"writtenOffBalance"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BaseAccountExtensionReference"></a><div class="componentTitle">Complex Type <span class="qname">accountdtns:BaseAccountExtensionReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BaseAccountExtensionReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BaseAccountExtensionReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BaseAccountExtensionReference" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Complex_Type_accountdtns_BaseAccountExtensionReference.jpeg" usemap="#Accounts_types_1_1_xsd_Complex_Type_accountdtns_BaseAccountExtensionReference" /><map name="Accounts_types_1_1_xsd_Complex_Type_accountdtns_BaseAccountExtensionReference" id="Accounts_types_1_1_xsd_Complex_Type_accountdtns_BaseAccountExtensionReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_BaseAccountExtensionReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_BaseAccountExtensionReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_BaseAccountExtensionReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Complex Types </td>
+                                    <td><b><a href="AccountExtensions_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_accounts_extensions_xsd_2010_06_FriendsAndFamilyAccountExtensionReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2010/06" onclick="updatePageTitle('Documentation for AccountExtensions_types_1_0.xsd')">extdtns:FriendsAndFamilyAccountExtensionReference</a></b>, <b><a href="AccountExtensions_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_accounts_extensions_xsd_2010_06_GroupPricePlanAccountExtensionReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2010/06" onclick="updatePageTitle('Documentation for AccountExtensions_types_1_0.xsd')">extdtns:GroupPricePlanAccountExtensionReference</a></b>, <b><a href="AccountExtensions_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_accounts_extensions_xsd_2010_06_PoolAccountExtensionReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2010/06" onclick="updatePageTitle('Documentation for AccountExtensions_types_1_0.xsd')">extdtns:PoolAccountExtensionReference</a></b>, <b><a href="AccountExtensions_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_accounts_extensions_xsd_2010_06_SubscriberLimitAccountExtensionReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2010/06" onclick="updatePageTitle('Documentation for AccountExtensions_types_1_0.xsd')">extdtns:SubscriberLimitAccountExtensionReference</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>tns:getAccountExtension/tns:extensionReference</b>, <b>tns:listAccountExtensionsResponse/tns:return</b>, <b>tns:updateAccountAddExtensionResponse/tns:return</b>, <b>tns:updateAccountExtension/tns:extensionReference</b>, <b>tns:updateAccountRemoveExtension/tns:extensionReference</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_BaseAccountExtensionReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_BaseAccountExtensionReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_BaseAccountExtensionReference" style="display:block"><b>accountdtns:accountID{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>accountdtns:accountID</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BaseAccountExtensionReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BaseAccountExtensionReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BaseAccountExtensionReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"BaseAccountExtensionReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"accountID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BaseMutableAccountExtension"></a><div class="componentTitle">Complex Type <span class="qname">accountdtns:BaseMutableAccountExtension</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/accounts/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BaseMutableAccountExtension" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BaseMutableAccountExtension');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BaseMutableAccountExtension" style="display:block"><img alt="Diagram" border="0" src="img/Accounts_types_1_1_xsd_Complex_Type_accountdtns_BaseMutableAccountExtension.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_BaseMutableAccountExtension" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_BaseMutableAccountExtension');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_BaseMutableAccountExtension" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Complex Types </td>
+                                    <td><b><a href="Accounts_types_2_0_xsd.html#BaseAccountExtension" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/xsd/2011/01" onclick="updatePageTitle('Documentation for Accounts_types_2_0.xsd')">accountdtns:BaseAccountExtension</a></b>, <b><a href="AccountExtensions_types_2_0_xsd.html#MutableFriendsAndFamilyAccountExtension" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2011/02" onclick="updatePageTitle('Documentation for AccountExtensions_types_2_0.xsd')">extdtns:MutableFriendsAndFamilyAccountExtension</a></b>, <b><a href="AccountExtensions_types_2_0_xsd.html#MutableGroupPricePlanAccountExtension" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2011/02" onclick="updatePageTitle('Documentation for AccountExtensions_types_2_0.xsd')">extdtns:MutableGroupPricePlanAccountExtension</a></b>, <b><a href="AccountExtensions_types_2_0_xsd.html#MutablePoolAccountExtension" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2011/02" onclick="updatePageTitle('Documentation for AccountExtensions_types_2_0.xsd')">extdtns:MutablePoolAccountExtension</a></b>, <b><a href="AccountExtensions_types_2_0_xsd.html#MutableSubscriberLimitAccountExtension" target="mainFrame" title="http://soap.crmapi.util.redknee.com/accounts/extensions/xsd/2011/02" onclick="updatePageTitle('Documentation for AccountExtensions_types_2_0.xsd')">extdtns:MutableSubscriberLimitAccountExtension</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>tns:updateAccountExtension/tns:extension</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_BaseMutableAccountExtension" type="image" src="img/btM.gif" value="-" onclick="switchState('model_BaseMutableAccountExtension');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_BaseMutableAccountExtension" style="display:block"></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BaseMutableAccountExtension" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BaseMutableAccountExtension');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BaseMutableAccountExtension" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"BaseMutableAccountExtension"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Accounts_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

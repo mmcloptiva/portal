@@ -1,0 +1,1271 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for CallDetails.wsdl</title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var portsBoxes= new Array('ports_CallDetailService');
+var operationsBoxes= new Array('operations_CallDetails_v2_0_SOAP11Binding', 
+				'operations_CallDetailsPortType_v2_0');
+var usedByBoxes= new Array('usedBy_CallDetails_v2_0_SOAP11Binding', 
+				'usedBy_CallDetailsPortType_v2_0');
+var sourceBoxes= new Array('source_CallDetailService', 
+				'source_CallDetails_v2_0_SOAP11Binding', 
+				'source_CallDetailsPortType_v2_0');
+var annotationBoxes= new Array('documentation_CallDetails.wsdl');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, portsBoxes);" class="control" /></span><span class="globalControlName">Ports </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, operationsBoxes);" class="control" /></span><span class="globalControlName">Operations </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, annotationBoxes);" class="control" /></span><span class="globalControlName">Documentation</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="CallDetails.wsdl"></a><div class="componentTitle">Main WSDL <span class="qname">CallDetails.wsdl</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Documentation</b></div>
+                           <div class="floatRight"><input id="button_documentation_CallDetails.wsdl" type="image" src="img/btM.gif" value="-" onclick="switchState('documentation_CallDetails.wsdl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="documentation_CallDetails.wsdl" style="display:block" class="annotation">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tT">Call Details API 2.0 for CRMAPI Version 3.0 on March 28th, 2011</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetailService"></a><div class="componentTitle">Service <span class="qname">tns:CallDetailService</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Ports</b></div>
+                           <div class="floatRight"><input id="button_ports_CallDetailService" type="image" src="img/btM.gif" value="-" onclick="switchState('ports_CallDetailService');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="ports_CallDetailService" style="display:block">
+                              <div class="componentGroupTitle">CallDetailsSOAP11port_http</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Binding</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_wsdl.html#CallDetails_v2_0_SOAP11Binding" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">tns:CallDetails_v2_0_SOAP11Binding</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:address</span><span class="tAN"> location=</span><span class="tAV">"http://localhost:11648/CrmApi_v2_0/services/CallDetailService"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CallDetailService" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CallDetailService');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CallDetailService" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;wsdl:service</span><span class="tAN"> name=</span><span class="tAV">"CallDetailService"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:port</span><span class="tAN"> binding=</span><span class="tAV">"tns:CallDetails_v2_0_SOAP11Binding"</span><span class="tAN"> name=</span><span class="tAV">"CallDetailsSOAP11port_http"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:address</span><span class="tAN"> location=</span><span class="tAV">"http://localhost:11648/CrmApi_v2_0/services/CallDetailService"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:port&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/wsdl:service&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetails_v2_0_SOAP11Binding"></a><div class="componentTitle">Binding <span class="qname">tns:CallDetails_v2_0_SOAP11Binding</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Type</b></div>
+                           <div class="floatRight"><input id="button_bindingType_CallDetails_v2_0_SOAP11Binding" type="image" src="img/btM.gif" value="-" onclick="switchState('bindingType_CallDetails_v2_0_SOAP11Binding');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="bindingType_CallDetails_v2_0_SOAP11Binding" style="display:block"><b><a href="CallDetails_wsdl.html#CallDetailsPortType_v2_0" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">tns:CallDetailsPortType_v2_0</a></b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Extensibility</b></div>
+                           <div class="floatRight"><input id="button_extensibility_CallDetails_v2_0_SOAP11Binding" type="image" src="img/btM.gif" value="-" onclick="switchState('extensibility_CallDetails_v2_0_SOAP11Binding');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="extensibility_CallDetails_v2_0_SOAP11Binding" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;soap:binding</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tAN"> transport=</span><span class="tAV">"http://schemas.xmlsoap.org/soap/http"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Operations</b></div>
+                           <div class="floatRight"><input id="button_operations_CallDetails_v2_0_SOAP11Binding" type="image" src="img/btM.gif" value="-" onclick="switchState('operations_CallDetails_v2_0_SOAP11Binding');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="operations_CallDetails_v2_0_SOAP11Binding" style="display:block"><a id=""></a><div class="componentGroupTitle">listCallDetails</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listCallDetails"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table><a id=""></a><div class="componentGroupTitle" style="margin-top:20px;">getCallDetail</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:getCallDetail"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table><a id=""></a><div class="componentGroupTitle" style="margin-top:20px;">listDetailedCallDetails</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listDetailedCallDetails"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table><a id=""></a><div class="componentGroupTitle" style="margin-top:20px;">listDetailedCallDetailsWithBundles</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listDetailedCallDetailsWithBundles"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table><a id=""></a><div class="componentGroupTitle" style="margin-top:20px;">listCallTypes</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listCallTypes"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table><a id=""></a><div class="componentGroupTitle" style="margin-top:20px;">getCallType</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:getCallType"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table><a id=""></a><div class="componentGroupTitle" style="margin-top:20px;">listUsageTypes</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listUsageTypes"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table><a id=""></a><div class="componentGroupTitle" style="margin-top:20px;">getUsageType</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Extensibility</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:getUsageType"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft">
+                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                          <tr>
+                                             <td width="100%">
+                                                <pre><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span></pre>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_CallDetails_v2_0_SOAP11Binding" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_CallDetails_v2_0_SOAP11Binding');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_CallDetails_v2_0_SOAP11Binding" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Service </td>
+                                    <td><b><a href="CallDetails_wsdl.html#CallDetailService" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">tns:CallDetailService</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CallDetails_v2_0_SOAP11Binding" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CallDetails_v2_0_SOAP11Binding');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CallDetails_v2_0_SOAP11Binding" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;wsdl:binding</span><span class="tAN"> name=</span><span class="tAV">"CallDetails_v2_0_SOAP11Binding"</span><span class="tAN"> type=</span><span class="tAV">"tns:CallDetailsPortType_v2_0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;soap:binding</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tAN"> transport=</span><span class="tAV">"http://schemas.xmlsoap.org/soap/http"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listCallDetails"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listCallDetails"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"getCallDetail"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:getCallDetail"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listDetailedCallDetails"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listDetailedCallDetails"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listDetailedCallDetailsWithBundles"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listDetailedCallDetailsWithBundles"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listCallTypes"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listCallTypes"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"getCallType"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:getCallType"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listUsageTypes"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:listUsageTypes"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"getUsageType"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;soap:operation</span><span class="tAN"> soapAction=</span><span class="tAV">"urn:getUsageType"</span><span class="tAN"> style=</span><span class="tAV">"document"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:input&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:body</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:output&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;soap:fault</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> use=</span><span class="tAV">"literal"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/wsdl:fault&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/wsdl:binding&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetailsPortType_v2_0"></a><div class="componentTitle">PortType <span class="qname">tns:CallDetailsPortType_v2_0</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Operations</b></div>
+                           <div class="floatRight"><input id="button_operations_CallDetailsPortType_v2_0" type="image" src="img/btM.gif" value="-" onclick="switchState('operations_CallDetailsPortType_v2_0');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="operations_CallDetailsPortType_v2_0" style="display:block"><a id="CallDetailsPortType_v2_0_listCallDetails"></a><div class="componentGroupTitle">listCallDetails</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#listCallDetailsMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listCallDetailsMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v2.0_PQN_listCallDetailsResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listCallDetailsResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table><a id="CallDetailsPortType_v2_0_getCallDetail"></a><div class="componentGroupTitle" style="margin-top:20px;">getCallDetail</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#getCallDetailMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:getCallDetailMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v2.0_PQN_getCallDetailResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:getCallDetailResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table><a id="CallDetailsPortType_v2_0_listDetailedCallDetails"></a><div class="componentGroupTitle" style="margin-top:20px;">listDetailedCallDetails</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#listDetailedCallDetailsMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listDetailedCallDetailsMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v2.0_PQN_listDetailedCallDetailsResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listDetailedCallDetailsResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table><a id="CallDetailsPortType_v2_0_listDetailedCallDetailsWithBundles"></a><div class="componentGroupTitle" style="margin-top:20px;">listDetailedCallDetailsWithBundles</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#listDetailedCallDetailsWithBundlesMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listDetailedCallDetailsWithBundlesMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v2.0_PQN_listDetailedCallDetailsWithBundlesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listDetailedCallDetailsWithBundlesResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table><a id="CallDetailsPortType_v2_0_listCallTypes"></a><div class="componentGroupTitle" style="margin-top:20px;">listCallTypes</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#listCallTypesMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listCallTypesMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">calldetailnsv1_0:listCallTypesResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table><a id="CallDetailsPortType_v2_0_getCallType"></a><div class="componentGroupTitle" style="margin-top:20px;">getCallType</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#getCallTypeMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:getCallTypeMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">calldetailnsv1_0:getCallTypeResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table><a id="CallDetailsPortType_v2_0_listUsageTypes"></a><div class="componentGroupTitle" style="margin-top:20px;">listUsageTypes</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#listUsageTypesMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:listUsageTypesMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">calldetailnsv1_0:listUsageTypesResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table><a id="CallDetailsPortType_v2_0_getUsageType"></a><div class="componentGroupTitle" style="margin-top:20px;">getUsageType</div>
+                              <table class="propertiesTable" style="margin-left:10px;">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Input</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_2_0_wsdl.html#getUsageTypeMessage" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails_interface_2_0.wsdl')">calldetailnsv2_0:getUsageTypeMessage</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Output</td>
+                                    <td class="floatLeft"><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">calldetailnsv1_0:getUsageTypeResponse</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">Fault: CRMException</td>
+                                    <td class="floatLeft"><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">exns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_CallDetailsPortType_v2_0" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_CallDetailsPortType_v2_0');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_CallDetailsPortType_v2_0" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Binding </td>
+                                    <td><b><a href="CallDetails_wsdl.html#CallDetails_v2_0_SOAP11Binding" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/CallDetails-v2.0" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">tns:CallDetails_v2_0_SOAP11Binding</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CallDetailsPortType_v2_0" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CallDetailsPortType_v2_0');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CallDetailsPortType_v2_0" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;wsdl:portType</span><span class="tAN"> name=</span><span class="tAV">"CallDetailsPortType_v2_0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listCallDetails"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listCallDetailsMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:listCallDetails"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listCallDetailsResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"getCallDetail"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:getCallDetailMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:getCallDetail"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:getCallDetailResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listDetailedCallDetails"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listDetailedCallDetailsMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:listDetailedCallDetails"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listDetailedCallDetailsResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listDetailedCallDetailsWithBundles"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listDetailedCallDetailsWithBundlesMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:listDetailedCallDetailsWithBundles"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listDetailedCallDetailsWithBundlesResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listCallTypes"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listCallTypesMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:listCallTypes"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv1_0:listCallTypesResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"getCallType"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:getCallTypeMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:getCallType"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv1_0:getCallTypeResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"listUsageTypes"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:listUsageTypesMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:listUsageTypes"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv1_0:listUsageTypesResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:operation</span><span class="tAN"> name=</span><span class="tAV">"getUsageType"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:input</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv2_0:getUsageTypeMessage"</span><span class="tAN"> wsaw:Action=</span><span class="tAV">"urn:getUsageType"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:output</span><span class="tAN"> message=</span><span class="tAV">"calldetailnsv1_0:getUsageTypeResponse"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;wsdl:fault</span><span class="tAN"> message=</span><span class="tAV">"exns:CRMExceptionFault"</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/wsdl:operation&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/wsdl:portType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

@@ -1,0 +1,2986 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_Common_types_1_1.xsd', 
+				'properties_GenericParameter', 
+				'properties_GenericParameterArray', 
+				'properties_BatchResults', 
+				'properties_BillingMessageReference', 
+				'properties_NotificationPreferenceType');
+var facetsBoxes= new Array('facets_NotificationPreferenceType', 
+				'facets_SuccessCode', 
+				'facets_ResultCode', 
+				'facets_SystemType', 
+				'facets_PaidType', 
+				'facets_TechnologyType', 
+				'facets_PoolLimitStrategy', 
+				'facets_BatchResultType', 
+				'facets_ProvisioningStateType', 
+				'facets_ServiceProvisionStatus', 
+				'facets_BillingMessageState', 
+				'facets_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');
+var usedByBoxes= new Array('usedBy_SuccessCode', 
+				'usedBy_BatchResultType', 
+				'usedBy_BillingMessageState', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');
+var sourceBoxes= new Array('source_GenericParameter', 
+				'source_GenericParameterArray', 
+				'source_BatchResults', 
+				'source_BillingMessageReference', 
+				'source_NotificationPreferenceType', 
+				'source_SuccessCode', 
+				'source_ResultCode', 
+				'source_SystemType', 
+				'source_PaidType', 
+				'source_TechnologyType', 
+				'source_PoolLimitStrategy', 
+				'source_BatchResultType', 
+				'source_ProvisioningStateType', 
+				'source_ServiceProvisionStatus', 
+				'source_BillingMessageState', 
+				'source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter', 
+				'source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray', 
+				'source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults', 
+				'source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference', 
+				'source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');
+var instanceBoxes= new Array('instance_GenericParameter', 
+				'instance_GenericParameterArray', 
+				'instance_BatchResults', 
+				'instance_BillingMessageReference');
+var diagramBoxes= new Array('diagram_GenericParameter', 
+				'diagram_GenericParameterArray', 
+				'diagram_BatchResults', 
+				'diagram_BillingMessageReference', 
+				'diagram_NotificationPreferenceType', 
+				'diagram_SuccessCode', 
+				'diagram_ResultCode', 
+				'diagram_SystemType', 
+				'diagram_PaidType', 
+				'diagram_TechnologyType', 
+				'diagram_PoolLimitStrategy', 
+				'diagram_BatchResultType', 
+				'diagram_ProvisioningStateType', 
+				'diagram_ServiceProvisionStatus', 
+				'diagram_BillingMessageState', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');
+var annotationBoxes= new Array('annotations_ServiceProvisionStatus');
+var modelBoxes= new Array('model_GenericParameter', 
+				'model_GenericParameterArray', 
+				'model_BatchResults', 
+				'model_BillingMessageReference', 
+				'model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter', 
+				'model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray', 
+				'model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults', 
+				'model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, annotationBoxes);" class="control" /></span><span class="globalControlName">Documentation</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, facetsBoxes);" class="control" /></span><span class="globalControlName">Facets </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="Common_types_1_1.xsd"></a><div class="componentTitle">Imported schema <span class="qname">Common_types_1_1.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_Common_types_1_1.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_Common_types_1_1.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_Common_types_1_1.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="GenericParameter"></a><div class="componentTitle">Element <span class="qname">dtns:GenericParameter</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_GenericParameter" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Element_dtns_GenericParameter.jpeg" usemap="#Common_types_1_1_xsd_Element_dtns_GenericParameter" /><map name="Common_types_1_1_xsd_Element_dtns_GenericParameter" id="Common_types_1_1_xsd_Element_dtns_GenericParameter"><area alt="Common_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" coords="157,3,330,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:GenericParameter</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_GenericParameter" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('model_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_GenericParameter" style="display:block"><b>dtns:name</b> , <b>dtns:value</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:name</b>, <b>dtns:value</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_GenericParameter" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;dtns:GenericParameter</span><span class="tT"> </span><span class="tAN">xmlns:dtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/dtns:name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:value</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/dtns:value&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/dtns:GenericParameter&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('source_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_GenericParameter" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"GenericParameter"</span><span class="tAN"> type=</span><span class="tAV">"dtns:GenericParameter"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="GenericParameterArray"></a><div class="componentTitle">Element <span class="qname">dtns:GenericParameterArray</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_GenericParameterArray" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Element_dtns_GenericParameterArray.jpeg" usemap="#Common_types_1_1_xsd_Element_dtns_GenericParameterArray" /><map name="Common_types_1_1_xsd_Element_dtns_GenericParameterArray" id="Common_types_1_1_xsd_Element_dtns_GenericParameterArray"><area alt="Common_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" coords="187,3,390,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:GenericParameterArray</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_GenericParameterArray" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('model_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_GenericParameterArray" style="display:block"><b>dtns:subElement*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:subElement</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_GenericParameterArray" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;dtns:GenericParameterArray</span><span class="tT"> </span><span class="tAN">xmlns:dtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:subElement</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/dtns:subElement&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/dtns:GenericParameterArray&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('source_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_GenericParameterArray" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"GenericParameterArray"</span><span class="tAN"> type=</span><span class="tAV">"dtns:GenericParameterArray"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BatchResults"></a><div class="componentTitle">Element <span class="qname">dtns:BatchResults</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BatchResults');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BatchResults" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Element_dtns_BatchResults.jpeg" usemap="#Common_types_1_1_xsd_Element_dtns_BatchResults" /><map name="Common_types_1_1_xsd_Element_dtns_BatchResults" id="Common_types_1_1_xsd_Element_dtns_BatchResults"><area alt="Common_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" coords="130,3,276,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:BatchResults</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_BatchResults');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_BatchResults" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('model_BatchResults');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_BatchResults" style="display:block"><b>dtns:overallResult{0,1}</b> , <b>dtns:numberOfRequests{0,1}</b> , <b>dtns:numberOfSuccesses{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:numberOfRequests</b>, <b>dtns:numberOfSuccesses</b>, <b>dtns:overallResult</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_BatchResults');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_BatchResults" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;dtns:BatchResults</span><span class="tT"> </span><span class="tAN">xmlns:dtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:overallResult</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:overallResult&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:numberOfRequests</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:numberOfRequests&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:numberOfSuccesses</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:numberOfSuccesses&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/dtns:BatchResults&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BatchResults');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BatchResults" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"BatchResults"</span><span class="tAN"> type=</span><span class="tAV">"dtns:BatchResults"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BillingMessageReference"></a><div class="componentTitle">Element <span class="qname">dtns:BillingMessageReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BillingMessageReference" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Element_dtns_BillingMessageReference.jpeg" usemap="#Common_types_1_1_xsd_Element_dtns_BillingMessageReference" /><map name="Common_types_1_1_xsd_Element_dtns_BillingMessageReference" id="Common_types_1_1_xsd_Element_dtns_BillingMessageReference"><area alt="Common_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" coords="193,3,402,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:BillingMessageReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_BillingMessageReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_BillingMessageReference" style="display:block"><b>dtns:identifier{0,1}</b> , <b>dtns:language{0,1}</b> , <b>dtns:message{0,1}</b> , <b>dtns:spid{0,1}</b> , <b>dtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:identifier</b>, <b>dtns:language</b>, <b>dtns:message</b>, <b>dtns:spid</b>, <b>dtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_BillingMessageReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;dtns:BillingMessageReference</span><span class="tT"> </span><span class="tAN">xmlns:dtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:language</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:language&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:spid&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dtns:state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/dtns:state&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/dtns:BillingMessageReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BillingMessageReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"BillingMessageReference"</span><span class="tAN"> type=</span><span class="tAV">"dtns:BillingMessageReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="NotificationPreferenceType"></a><div class="componentTitle">Element <span class="qname">dtns:NotificationPreferenceType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_NotificationPreferenceType" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Element_dtns_NotificationPreferenceType.jpeg" usemap="#Common_types_1_1_xsd_Element_dtns_NotificationPreferenceType" /><map name="Common_types_1_1_xsd_Element_dtns_NotificationPreferenceType" id="Common_types_1_1_xsd_Element_dtns_NotificationPreferenceType"><area alt="Common_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" coords="204,0,431,26" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:NotificationPreferenceType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_NotificationPreferenceType" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>simple</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_NotificationPreferenceType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">Default</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">SMS</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">Email</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>3</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">SMS and Email</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>4</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">None</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_NotificationPreferenceType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"NotificationPreferenceType"</span><span class="tAN"> type=</span><span class="tAV">"dtns:NotificationPreferenceType"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="SuccessCode"></a><div class="componentTitle">Simple Type <span class="qname">dtns:SuccessCode</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_SuccessCode" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_SuccessCode');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_SuccessCode" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_SuccessCode.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_SuccessCode" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_SuccessCode');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_SuccessCode" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>3</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>4</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>5</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>6</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>7</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>8</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>9</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>10</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>11</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>12</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>13</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>14</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>15</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>16</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>17</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>18</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>19</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>20</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>21</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>22</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>23</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>24</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>25</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_SuccessCode" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_SuccessCode');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_SuccessCode" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>tns:SuccessfulResponse/tns:result</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_SuccessCode" type="image" src="img/btM.gif" value="-" onclick="switchState('source_SuccessCode');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_SuccessCode" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"SuccessCode"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Success --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"3"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"4"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"5"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"6"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"7"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"8"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"9"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"10"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"11"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"12"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"13"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"14"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"15"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"16"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"17"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"18"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"19"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"20"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"21"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"22"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"23"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"24"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"25"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!--   --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ResultCode"></a><div class="componentTitle">Simple Type <span class="qname">dtns:ResultCode</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ResultCode" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ResultCode');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ResultCode" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_ResultCode.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_ResultCode" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_ResultCode');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_ResultCode" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ResultCode" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ResultCode');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ResultCode" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"ResultCode"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Success --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Failure --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Not Processed --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="SystemType"></a><div class="componentTitle">Simple Type <span class="qname">dtns:SystemType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_SystemType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_SystemType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_SystemType" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_SystemType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_SystemType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_SystemType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_SystemType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_SystemType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_SystemType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_SystemType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"SystemType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Prepaid --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Postpaid --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Hybrid --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="PaidType"></a><div class="componentTitle">Simple Type <span class="qname">dtns:PaidType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_PaidType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_PaidType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_PaidType" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_PaidType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_PaidType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_PaidType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_PaidType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_PaidType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_PaidType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_PaidType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"PaidType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Prepaid --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Postpaid --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Unspecified --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="TechnologyType"></a><div class="componentTitle">Simple Type <span class="qname">dtns:TechnologyType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_TechnologyType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_TechnologyType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_TechnologyType" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_TechnologyType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_TechnologyType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_TechnologyType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_TechnologyType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>3</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>4</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>31000</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_TechnologyType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_TechnologyType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_TechnologyType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"TechnologyType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- GSM --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- TDMA --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- CDMA --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"3"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- ANY --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"4"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- VSAT_PSTN --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"31000"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- NO_TECH --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="PoolLimitStrategy"></a><div class="componentTitle">Simple Type <span class="qname">dtns:PoolLimitStrategy</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_PoolLimitStrategy" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_PoolLimitStrategy');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_PoolLimitStrategy" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_PoolLimitStrategy.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_PoolLimitStrategy" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_PoolLimitStrategy');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_PoolLimitStrategy" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_PoolLimitStrategy" type="image" src="img/btM.gif" value="-" onclick="switchState('source_PoolLimitStrategy');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_PoolLimitStrategy" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"PoolLimitStrategy"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- None --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Common --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Individual --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BatchResultType"></a><div class="componentTitle">Simple Type <span class="qname">dtns:BatchResultType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BatchResultType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BatchResultType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BatchResultType" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_BatchResultType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_BatchResultType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_BatchResultType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_BatchResultType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_BatchResultType" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_BatchResultType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_BatchResultType" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>dtns:BatchResults/dtns:overallResult</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BatchResultType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BatchResultType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BatchResultType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"BatchResultType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Success --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Overall Failure --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Partial Success --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ProvisioningStateType"></a><div class="componentTitle">Simple Type <span class="qname">dtns:ProvisioningStateType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ProvisioningStateType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ProvisioningStateType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ProvisioningStateType" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_ProvisioningStateType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_ProvisioningStateType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_ProvisioningStateType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_ProvisioningStateType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>3</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>4</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>5</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>6</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>7</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>8</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>9</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ProvisioningStateType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ProvisioningStateType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ProvisioningStateType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"ProvisioningStateType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Not Provisioned --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Provisioned --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"3"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Provisioned With Errors --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"4"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Suspended --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"5"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Suspended With Errors --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"6"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Unprovisioned With Errors --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"7"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Unprovisioned --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"8"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Suspended CLCT --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"9"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Suspended CLCT with Errors --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ServiceProvisionStatus"></a><div class="componentTitle">Simple Type <span class="qname">dtns:ServiceProvisionStatus</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_ServiceProvisionStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('annotations_ServiceProvisionStatus');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_ServiceProvisionStatus" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td width="100%">
+                                          <pre><span class="tT">Deprecated.  Left here in version 2.2 for validation purposes only.</span></pre>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ServiceProvisionStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ServiceProvisionStatus');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ServiceProvisionStatus" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_ServiceProvisionStatus.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_ServiceProvisionStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_ServiceProvisionStatus');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_ServiceProvisionStatus" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>4</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>5</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>6</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>7</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ServiceProvisionStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ServiceProvisionStatus');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ServiceProvisionStatus" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"ServiceProvisionStatus"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Deprecated. Left here in version 2.2 for validation purposes only.</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- U-OK --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- U Failed To Prov --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"4"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- P Failed To UnProv --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"5"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- P-OK --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"6"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Suspended --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"7"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Suspended CLCT --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BillingMessageState"></a><div class="componentTitle">Simple Type <span class="qname">dtns:BillingMessageState</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BillingMessageState" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BillingMessageState');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BillingMessageState" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_BillingMessageState.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_BillingMessageState" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_BillingMessageState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_BillingMessageState" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_BillingMessageState" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_BillingMessageState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_BillingMessageState" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>dtns:BillingMessageReference/dtns:state</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BillingMessageState" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BillingMessageState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BillingMessageState" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"BillingMessageState"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Active --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Inactive --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter"></a><div class="componentTitle">Complex Type <span class="qname">dtns:GenericParameter</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Complex_Type_dtns_GenericParameter.jpeg" usemap="#Common_types_1_1_xsd_Complex_Type_dtns_GenericParameter" /><map name="Common_types_1_1_xsd_Complex_Type_dtns_GenericParameter" id="Common_types_1_1_xsd_Complex_Type_dtns_GenericParameter"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>dtns:CRMRequestHeader/dtns:parameters</b>, <b>dtns:ExecuteResult/dtns:parameters</b>, <b><a href="Common_types_1_1_xsd.html#GenericParameter" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:GenericParameter</a></b>, <b>dtns:GenericResponse/dtns:parameters</b>, <b>tns:addOrUpdateForwardToNumber/tns:parameters</b>, <b>tns:getSubscriberHlrInfo/tns:parameters</b>, <b>tns:getSubscriberHlrInfoResponse/tns:parameters</b>, <b>tns:removeForwardToNumber/tns:parameters</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" style="display:block"><b>dtns:name</b> , <b>dtns:value</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:name</b>, <b>dtns:value</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameter" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"GenericParameter"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"name"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"value"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"xs:anyType"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray"></a><div class="componentTitle">Complex Type <span class="qname">dtns:GenericParameterArray</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Complex_Type_dtns_GenericParameterArray.jpeg" usemap="#Common_types_1_1_xsd_Complex_Type_dtns_GenericParameterArray" /><map name="Common_types_1_1_xsd_Complex_Type_dtns_GenericParameterArray" id="Common_types_1_1_xsd_Complex_Type_dtns_GenericParameterArray"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_types_1_1_xsd.html#GenericParameterArray" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:GenericParameterArray</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" style="display:block"><b>dtns:subElement*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:subElement</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_GenericParameterArray" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"GenericParameterArray"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"subElement"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"xs:anyType"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults"></a><div class="componentTitle">Complex Type <span class="qname">dtns:BatchResults</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Complex_Type_dtns_BatchResults.jpeg" usemap="#Common_types_1_1_xsd_Complex_Type_dtns_BatchResults" /><map name="Common_types_1_1_xsd_Complex_Type_dtns_BatchResults" id="Common_types_1_1_xsd_Complex_Type_dtns_BatchResults"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_types_1_1_xsd.html#BatchResults" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:BatchResults</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" style="display:block"><b>dtns:overallResult{0,1}</b> , <b>dtns:numberOfRequests{0,1}</b> , <b>dtns:numberOfSuccesses{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:numberOfRequests</b>, <b>dtns:numberOfSuccesses</b>, <b>dtns:overallResult</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BatchResults" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"BatchResults"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"overallResult"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"dtns:BatchResultType"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"numberOfRequests"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"numberOfSuccesses"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference"></a><div class="componentTitle">Complex Type <span class="qname">dtns:BillingMessageReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Complex_Type_dtns_BillingMessageReference.jpeg" usemap="#Common_types_1_1_xsd_Complex_Type_dtns_BillingMessageReference" /><map name="Common_types_1_1_xsd_Complex_Type_dtns_BillingMessageReference" id="Common_types_1_1_xsd_Complex_Type_dtns_BillingMessageReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_types_1_1_xsd.html#BillingMessageReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:BillingMessageReference</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" style="display:block"><b>dtns:identifier{0,1}</b> , <b>dtns:language{0,1}</b> , <b>dtns:message{0,1}</b> , <b>dtns:spid{0,1}</b> , <b>dtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>dtns:identifier</b>, <b>dtns:language</b>, <b>dtns:message</b>, <b>dtns:spid</b>, <b>dtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_BillingMessageReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"BillingMessageReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"identifier"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"language"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"message"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"spid"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"state"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"dtns:BillingMessageState"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType"></a><div class="componentTitle">Simple Type <span class="qname">dtns:NotificationPreferenceType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" style="display:block"><img alt="Diagram" border="0" src="img/Common_types_1_1_xsd_Simple_Type_dtns_NotificationPreferenceType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">Default</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">SMS</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">Email</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>3</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">SMS and Email</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>4</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">None</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_types_1_1_xsd.html#NotificationPreferenceType" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_types_1_1.xsd')">dtns:NotificationPreferenceType</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_xsd_2008_08_NotificationPreferenceType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"NotificationPreferenceType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Default</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">SMS</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Email</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"3"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">SMS and Email</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"4"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">None</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

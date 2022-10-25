@@ -1,0 +1,4 @@
+define(function () {
+// Auto generated index for searching.
+return {"documentation":"0*20*0,1*20*0,2*20*0,3*20*0,4*20*0,5*20*0,6*20*0,7*20*0,8*20*0,9*20*0,10*20*0,11*20*0,12*20*0,13*20*0,14*20*0,15*20*0,16*20*0,17*20*0,18*20*0,19*20*0,20*20*0,21*20*0","enterpriseintegration":"8*20*2","enterpriseintegration.wsdl":"8*20*1","generalprovisioning":"9*20*2","generalprovisioning.wsdl":"9*20*1","genericentity":"10*20*2","genericentity.wsdl":"10*20*1","help":"22*20*2","invoices":"11*20*2","invoices.wsdl":"11*20*1","loyalty":"12*20*2","loyalty.wsdl":"12*20*1","mobilenumbers":"13*20*2","mobilenumbers.wsdl":"13*20*1","notes":"14*20*2","notes.wsdl":"14*20*1","paymentgatewayintegration":"15*20*2"};
+});

@@ -1,0 +1,2447 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_Common_fault_types_1_0.xsd', 
+				'properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException', 
+				'properties_CompoundException', 
+				'properties_DataCreationException', 
+				'properties_DataDeletionException', 
+				'properties_DataStoreException', 
+				'properties_ValidationException', 
+				'properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry', 
+				'properties_ThrottlingException', 
+				'properties_ShutdownException');
+var usedByBoxes= new Array('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException', 
+				'usedBy_CRMException', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException', 
+				'usedBy_ValidationExceptionEntry', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException', 
+				'usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');
+var sourceBoxes= new Array('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException', 
+				'source_CompoundException', 
+				'source_DataCreationException', 
+				'source_DataDeletionException', 
+				'source_DataStoreException', 
+				'source_ValidationException', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry', 
+				'source_ThrottlingException', 
+				'source_ShutdownException', 
+				'source_CRMException', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException', 
+				'source_ValidationExceptionEntry', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException', 
+				'source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');
+var instanceBoxes= new Array('instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException', 
+				'instance_CompoundException', 
+				'instance_DataCreationException', 
+				'instance_DataDeletionException', 
+				'instance_DataStoreException', 
+				'instance_ValidationException', 
+				'instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry', 
+				'instance_ThrottlingException', 
+				'instance_ShutdownException');
+var diagramBoxes= new Array('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException', 
+				'diagram_CompoundException', 
+				'diagram_DataCreationException', 
+				'diagram_DataDeletionException', 
+				'diagram_DataStoreException', 
+				'diagram_ValidationException', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry', 
+				'diagram_ThrottlingException', 
+				'diagram_ShutdownException', 
+				'diagram_CRMException', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException', 
+				'diagram_ValidationExceptionEntry', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException', 
+				'diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');
+var modelBoxes= new Array('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException', 
+				'model_CompoundException', 
+				'model_DataCreationException', 
+				'model_DataDeletionException', 
+				'model_DataStoreException', 
+				'model_ValidationException', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry', 
+				'model_ThrottlingException', 
+				'model_ShutdownException', 
+				'model_CRMException', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException', 
+				'model_ValidationExceptionEntry', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException', 
+				'model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="Common_fault_types_1_0.xsd"></a><div class="componentTitle">Imported schema <span class="qname">Common_fault_types_1_0.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_Common_fault_types_1_0.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_Common_fault_types_1_0.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_Common_fault_types_1_0.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:CRMException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_CRMException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_CRMException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_CRMException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_CRMException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="139,3,343,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Message </td>
+                                    <td><b><a href="Common_faults_1_0_wsdl.html#CRMExceptionFault" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_faults_1_0.wsdl')">tns:CRMExceptionFault</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:CRMException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:CRMException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CompoundException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:CompoundException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CompoundException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CompoundException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_CompoundException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_CompoundException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_CompoundException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_CompoundException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="189,43,485,65" /><area alt="Common_fault_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" coords="175,3,415,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CompoundException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CompoundException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CompoundException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CompoundException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_CompoundException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_CompoundException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:compoundEntries+</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:compoundEntries</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_CompoundException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_CompoundException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:CompoundException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:compoundEntries</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,unbounded}</span><span class="tEl">&lt;/crmapi_faults:compoundEntries&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:CompoundException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CompoundException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CompoundException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"CompoundException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:CompoundException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DataCreationException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:DataCreationException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DataCreationException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_DataCreationException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_DataCreationException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_DataCreationException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_DataCreationException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="199,43,495,65" /><area alt="Common_fault_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" coords="185,3,435,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_DataCreationException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_DataCreationException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileCreated</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileCreated</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_DataCreationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:DataCreationException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:profileCreated</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:profileCreated&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:DataCreationException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DataCreationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"DataCreationException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:DataCreationException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DataDeletionException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:DataDeletionException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DataDeletionException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_DataDeletionException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_DataDeletionException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_DataDeletionException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_DataDeletionException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="197,43,493,65" /><area alt="Common_fault_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" coords="183,3,431,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataDeletionException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataDeletionException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_DataDeletionException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_DataDeletionException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileDeleted</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileDeleted</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_DataDeletionException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:DataDeletionException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:profileDeleted</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:profileDeleted&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:DataDeletionException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DataDeletionException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"DataDeletionException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:DataDeletionException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DataStoreException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:DataStoreException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DataStoreException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_DataStoreException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_DataStoreException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_DataStoreException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_DataStoreException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="181,43,477,65" /><area alt="Common_fault_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" coords="167,3,399,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataStoreException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataStoreException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_DataStoreException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_DataStoreException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileStored</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileStored</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_DataStoreException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:DataStoreException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:profileStored</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:profileStored&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:DataStoreException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DataStoreException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"DataStoreException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:DataStoreException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ValidationException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:ValidationException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ValidationException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ValidationException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="182,43,478,65" /><area alt="Common_fault_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" coords="168,3,401,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ValidationException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ValidationException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_ValidationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_ValidationException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_ValidationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_ValidationException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:entries+</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:entries</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_ValidationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_ValidationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:ValidationException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:entries</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,unbounded}</span><span class="tEl">&lt;/crmapi_faults:entries&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:ValidationException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ValidationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ValidationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ValidationException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:ValidationException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:ValidationExceptionEntry</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationExceptionEntry.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationExceptionEntry" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationExceptionEntry" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_ValidationExceptionEntry"><area alt="Common_fault_types_1_0_xsd.tmp#ValidationExceptionEntry" href="Common_fault_types_1_0_xsd.html#ValidationExceptionEntry" coords="196,3,457,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#ValidationExceptionEntry" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ValidationExceptionEntry</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" style="display:block"><b>crmapi_faults:explanation</b> , <b>crmapi_faults:name</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:explanation</b>, <b>crmapi_faults:name</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:ValidationExceptionEntry</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:explanation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:explanation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:name&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:ValidationExceptionEntry&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ValidationExceptionEntry"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:ValidationExceptionEntry"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ThrottlingException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:ThrottlingException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ThrottlingException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_ThrottlingException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_ThrottlingException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_ThrottlingException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_ThrottlingException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="183,43,479,65" /><area alt="Common_fault_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" coords="169,3,403,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ThrottlingException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ThrottlingException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_ThrottlingException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_ThrottlingException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_ThrottlingException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:ThrottlingException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:ThrottlingException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ThrottlingException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ThrottlingException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:ThrottlingException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ShutdownException"></a><div class="componentTitle">Element <span class="qname">crmapi_faults:ShutdownException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ShutdownException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Element_crmapi_faults_ShutdownException.jpeg" usemap="#Common_fault_types_1_0_xsd_Element_crmapi_faults_ShutdownException" /><map name="Common_fault_types_1_0_xsd_Element_crmapi_faults_ShutdownException" id="Common_fault_types_1_0_xsd_Element_crmapi_faults_ShutdownException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="182,43,478,65" /><area alt="Common_fault_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" coords="168,3,401,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ShutdownException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ShutdownException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_ShutdownException" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_ShutdownException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_ShutdownException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;crmapi_faults:ShutdownException</span><span class="tT"> </span><span class="tAN">xmlns:crmapi_faults=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:message</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:message&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;crmapi_faults:code</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/crmapi_faults:code&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/crmapi_faults:ShutdownException&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ShutdownException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ShutdownException"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:ShutdownException"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CRMException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:CRMException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CRMException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CRMException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CRMException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CRMException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CRMException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CRMException"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_CRMException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b>, <b>crmapi_faults:CompoundException/crmapi_faults:compoundEntries</b>, <b>serviceandbundledtns:BundleAdjustmentResult/serviceandbundledtns:exception</b>, <b>subscriptiondtns:VoucherOrder/subscriptiondtns:exception</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Complex Types </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CompoundException</a></b>, <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b>, <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataDeletionException</a></b>, <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataStoreException</a></b>, <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ShutdownException</a></b>, <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ThrottlingException</a></b>, <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ValidationException</a></b>, <b><a href="Subscriptions_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_subscriptions_xsd_2011_01_SubscriptionStateTransitionException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/subscriptions/xsd/2011/01" onclick="updatePageTitle('Documentation for Subscriptions_types_2_0.xsd')">subscriptiondtns:SubscriptionStateTransitionException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_CRMException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CRMException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CRMException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CRMException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"message"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:CompoundException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CompoundException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CompoundException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CompoundException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_CompoundException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="199,3,495,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CompoundException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#CompoundException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CompoundException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:compoundEntries+</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:compoundEntries</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_CompoundException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CompoundException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"2"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> name=</span><span class="tAV">"compoundEntries"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:DataCreationException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataCreationException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataCreationException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataCreationException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataCreationException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="209,3,505,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#DataCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataCreationException</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="Subscriptions_types_1_2_xsd.html#http___soap.crmapi.util.redknee.com_subscriptions_xsd_2010_06_SubscriptionProfileCreationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/subscriptions/xsd/2010/06" onclick="updatePageTitle('Documentation for Subscriptions_types_1_2.xsd')">subscriptiondtns:SubscriptionProfileCreationException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileCreated</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileCreated</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataCreationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"DataCreationException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"16"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"profileCreated"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:DataDeletionException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataDeletionException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataDeletionException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataDeletionException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataDeletionException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="207,3,503,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataDeletionException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#DataDeletionException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataDeletionException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileDeleted</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileDeleted</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataDeletionException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"DataDeletionException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"17"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"profileDeleted"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:DataStoreException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataStoreException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataStoreException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataStoreException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_DataStoreException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="191,3,487,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataStoreException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#DataStoreException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:DataStoreException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:profileStored</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b>, <b>crmapi_faults:profileStored</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_DataStoreException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"DataStoreException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"3"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"profileStored"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:ValidationException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="192,3,488,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ValidationException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#ValidationException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ValidationException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b> , <b>crmapi_faults:entries+</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:entries</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"ValidationException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"14"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> name=</span><span class="tAV">"entries"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"crmapi_faults:ValidationExceptionEntry"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ValidationExceptionEntry"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:ValidationExceptionEntry</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ValidationExceptionEntry" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationExceptionEntry.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationExceptionEntry" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationExceptionEntry" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ValidationExceptionEntry"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_ValidationExceptionEntry" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>crmapi_faults:ValidationException/crmapi_faults:entries</b>, <b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ValidationExceptionEntry" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ValidationExceptionEntry</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('model_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_ValidationExceptionEntry" style="display:block"><b>crmapi_faults:explanation</b> , <b>crmapi_faults:name</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:explanation</b>, <b>crmapi_faults:name</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ValidationExceptionEntry" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ValidationExceptionEntry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ValidationExceptionEntry" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"ValidationExceptionEntry"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"explanation"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"name"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:ThrottlingException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ThrottlingException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ThrottlingException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ThrottlingException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ThrottlingException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="193,3,489,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ThrottlingException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#ThrottlingException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ThrottlingException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ThrottlingException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"ThrottlingException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"26"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException"></a><div class="componentTitle">Complex Type <span class="qname">crmapi_faults:ShutdownException</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" style="display:block"><img alt="Diagram" border="0" src="img/Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ShutdownException.jpeg" usemap="#Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ShutdownException" /><map name="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ShutdownException" id="Common_fault_types_1_0_xsd_Complex_Type_crmapi_faults_ShutdownException"><area alt="Common_fault_types_1_0_xsd.tmp#CRMException" href="Common_fault_types_1_0_xsd.html#CRMException" coords="192,3,488,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#CRMException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:CRMException</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Common_fault_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ShutdownException</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Common_fault_types_1_0_xsd.html#ShutdownException" target="mainFrame" title="http://soap.crmapi.util.redknee.com/common/exception/xsd/2008/08" onclick="updatePageTitle('Documentation for Common_fault_types_1_0.xsd')">crmapi_faults:ShutdownException</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" style="display:block"><b>crmapi_faults:code</b> , <b>crmapi_faults:message</b> , <b>crmapi_faults:code</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>crmapi_faults:code</b>, <b>crmapi_faults:message</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_common_exception_xsd_2008_08_ShutdownException" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"ShutdownException"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"crmapi_faults:CRMException"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"code"</span><span class="tAN"> default=</span><span class="tAV">"27"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Common_fault_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

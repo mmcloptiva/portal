@@ -1,0 +1,1551 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_DisputeManagement_types_1_0.xsd', 
+				'properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference', 
+				'properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference', 
+				'properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult', 
+				'properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult');
+var facetsBoxes= new Array('facets_DisputeInitiator', 
+				'facets_DisputeStatus');
+var usedByBoxes= new Array('usedBy_DisputeReference', 
+				'usedBy_DisputeInitiator', 
+				'usedBy_DisputeStatus', 
+				'usedBy_TransferQueryResult', 
+				'usedBy_TransferReference', 
+				'usedBy_DisputeQueryResult');
+var sourceBoxes= new Array('source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference', 
+				'source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference', 
+				'source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult', 
+				'source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult', 
+				'source_DisputeReference', 
+				'source_DisputeInitiator', 
+				'source_DisputeStatus', 
+				'source_TransferQueryResult', 
+				'source_TransferReference', 
+				'source_DisputeQueryResult');
+var instanceBoxes= new Array('instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference', 
+				'instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference', 
+				'instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult', 
+				'instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult');
+var diagramBoxes= new Array('diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult', 
+				'diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult', 
+				'diagram_DisputeReference', 
+				'diagram_DisputeInitiator', 
+				'diagram_DisputeStatus', 
+				'diagram_TransferQueryResult', 
+				'diagram_TransferReference', 
+				'diagram_DisputeQueryResult');
+var modelBoxes= new Array('model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference', 
+				'model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference', 
+				'model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult', 
+				'model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult', 
+				'model_DisputeReference', 
+				'model_TransferQueryResult', 
+				'model_TransferReference', 
+				'model_DisputeQueryResult');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, facetsBoxes);" class="control" /></span><span class="globalControlName">Facets </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="DisputeManagement_types_1_0.xsd"></a><div class="componentTitle">Imported schema <span class="qname">DisputeManagement_types_1_0.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_DisputeManagement_types_1_0.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_DisputeManagement_types_1_0.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_DisputeManagement_types_1_0.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference"></a><div class="componentTitle">Element <span class="qname">disputemanagementdtns:DisputeReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeReference.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeReference" /><map name="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeReference" id="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeReference"><area alt="DisputeManagement_types_1_0_xsd.tmp#DisputeReference" href="DisputeManagement_types_1_0_xsd.html#DisputeReference" coords="156,3,437,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="DisputeManagement_types_1_0_xsd.html#DisputeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:DisputeReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" style="display:block"><b>disputemanagementdtns:disputeId{0,1}</b> , <b>disputemanagementdtns:externalTransactionNumber{0,1}</b> , <b>disputemanagementdtns:contributorSubscriptionID{0,1}</b> , <b>disputemanagementdtns:recipientSubscriptionID{0,1}</b> , <b>disputemanagementdtns:disputeInitiator{0,1}</b> , <b>disputemanagementdtns:disputeState{0,1}</b> , <b>disputemanagementdtns:refundAmount{0,1}</b> , <b>disputemanagementdtns:blockedBalance{0,1}</b> , <b>disputemanagementdtns:blockBalanceFailed{0,1}</b> , <b>disputemanagementdtns:blockBalanceFailedReasonDescription{0,1}</b> , <b>disputemanagementdtns:disputeFeeAppliedTo{0,1}</b> , <b>disputemanagementdtns:disputeFeeApplied{0,1}</b> , <b>disputemanagementdtns:transferDate{0,1}</b> , <b>disputemanagementdtns:disputeCreateDate{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:blockBalanceFailed</b>, <b>disputemanagementdtns:blockBalanceFailedReasonDescription</b>, <b>disputemanagementdtns:blockedBalance</b>, <b>disputemanagementdtns:contributorSubscriptionID</b>, <b>disputemanagementdtns:disputeCreateDate</b>, <b>disputemanagementdtns:disputeFeeApplied</b>, <b>disputemanagementdtns:disputeFeeAppliedTo</b>, <b>disputemanagementdtns:disputeId</b>, <b>disputemanagementdtns:disputeInitiator</b>, <b>disputemanagementdtns:disputeState</b>, <b>disputemanagementdtns:externalTransactionNumber</b>, <b>disputemanagementdtns:recipientSubscriptionID</b>, <b>disputemanagementdtns:refundAmount</b>, <b>disputemanagementdtns:transferDate</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;disputemanagementdtns:DisputeReference</span><span class="tT"> </span><span class="tAN">xmlns:disputemanagementdtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:disputeId</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:disputeId&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:externalTransactionNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:externalTransactionNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:contributorSubscriptionID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:contributorSubscriptionID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:recipientSubscriptionID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:recipientSubscriptionID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:disputeInitiator</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:disputeInitiator&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:disputeState</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:disputeState&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:refundAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:refundAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:blockedBalance</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:blockedBalance&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:blockBalanceFailed</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:blockBalanceFailed&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:blockBalanceFailedReasonDescription</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:blockBalanceFailedReasonDescription&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:disputeFeeAppliedTo</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:disputeFeeAppliedTo&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:disputeFeeApplied</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:disputeFeeApplied&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:transferDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:transferDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:disputeCreateDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:disputeCreateDate&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/disputemanagementdtns:DisputeReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"DisputeReference"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:DisputeReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference"></a><div class="componentTitle">Element <span class="qname">disputemanagementdtns:TransferReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferReference.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferReference" /><map name="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferReference" id="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferReference"><area alt="DisputeManagement_types_1_0_xsd.tmp#TransferReference" href="DisputeManagement_types_1_0_xsd.html#TransferReference" coords="161,3,447,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="DisputeManagement_types_1_0_xsd.html#TransferReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:TransferReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" style="display:block"><b>disputemanagementdtns:externalTransactionNumber{0,1}</b> , <b>disputemanagementdtns:contributorSubscriptionID{0,1}</b> , <b>disputemanagementdtns:contributorMobileNumber{0,1}</b> , <b>disputemanagementdtns:recipientSubscriptionID{0,1}</b> , <b>disputemanagementdtns:recipientMobileNumber{0,1}</b> , <b>disputemanagementdtns:contributorAmount{0,1}</b> , <b>disputemanagementdtns:transferDate{0,1}</b> , <b>disputemanagementdtns:currentDisputeId{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:contributorAmount</b>, <b>disputemanagementdtns:contributorMobileNumber</b>, <b>disputemanagementdtns:contributorSubscriptionID</b>, <b>disputemanagementdtns:currentDisputeId</b>, <b>disputemanagementdtns:externalTransactionNumber</b>, <b>disputemanagementdtns:recipientMobileNumber</b>, <b>disputemanagementdtns:recipientSubscriptionID</b>, <b>disputemanagementdtns:transferDate</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;disputemanagementdtns:TransferReference</span><span class="tT"> </span><span class="tAN">xmlns:disputemanagementdtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:externalTransactionNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:externalTransactionNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:contributorSubscriptionID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:contributorSubscriptionID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:contributorMobileNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:contributorMobileNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:recipientSubscriptionID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:recipientSubscriptionID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:recipientMobileNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:recipientMobileNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:contributorAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:contributorAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:transferDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:transferDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:currentDisputeId</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:currentDisputeId&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/disputemanagementdtns:TransferReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"TransferReference"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:TransferReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult"></a><div class="componentTitle">Element <span class="qname">disputemanagementdtns:DisputeQueryResult</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeQueryResult.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeQueryResult" /><map name="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeQueryResult" id="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_DisputeQueryResult"><area alt="DisputeManagement_types_1_0_xsd.tmp#DisputeQueryResult" href="DisputeManagement_types_1_0_xsd.html#DisputeQueryResult" coords="169,3,463,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="DisputeManagement_types_1_0_xsd.html#DisputeQueryResult" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:DisputeQueryResult</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" style="display:block"><b>disputemanagementdtns:pageKey{0,1}</b> , <b>disputemanagementdtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:pageKey</b>, <b>disputemanagementdtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;disputemanagementdtns:DisputeQueryResult</span><span class="tT"> </span><span class="tAN">xmlns:disputemanagementdtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:pageKey</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:pageKey&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:references</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/disputemanagementdtns:references&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/disputemanagementdtns:DisputeQueryResult&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"DisputeQueryResult"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:DisputeQueryResult"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult"></a><div class="componentTitle">Element <span class="qname">disputemanagementdtns:TransferQueryResult</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferQueryResult.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferQueryResult" /><map name="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferQueryResult" id="DisputeManagement_types_1_0_xsd_Element_disputemanagementdtns_TransferQueryResult"><area alt="DisputeManagement_types_1_0_xsd.tmp#TransferQueryResult" href="DisputeManagement_types_1_0_xsd.html#TransferQueryResult" coords="174,3,473,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="DisputeManagement_types_1_0_xsd.html#TransferQueryResult" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:TransferQueryResult</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" style="display:block"><b>disputemanagementdtns:pageKey{0,1}</b> , <b>disputemanagementdtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:pageKey</b>, <b>disputemanagementdtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;disputemanagementdtns:TransferQueryResult</span><span class="tT"> </span><span class="tAN">xmlns:disputemanagementdtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:pageKey</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/disputemanagementdtns:pageKey&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;disputemanagementdtns:references</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/disputemanagementdtns:references&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/disputemanagementdtns:TransferQueryResult&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"TransferQueryResult"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:TransferQueryResult"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DisputeReference"></a><div class="componentTitle">Complex Type <span class="qname">disputemanagementdtns:DisputeReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DisputeReference" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeReference.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeReference" /><map name="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeReference" id="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_DisputeReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>disputemanagementdtns:DisputeQueryResult/disputemanagementdtns:references</b>, <b><a href="DisputeManagement_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:DisputeReference</a></b>, <b>tns:createDisputeResponse/tns:return</b>, <b>tns:getDisputeResponse/tns:return</b>, <b>tns:resolveDisputeResponse/tns:return</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_DisputeReference" style="display:block"><b>disputemanagementdtns:disputeId{0,1}</b> , <b>disputemanagementdtns:externalTransactionNumber{0,1}</b> , <b>disputemanagementdtns:contributorSubscriptionID{0,1}</b> , <b>disputemanagementdtns:recipientSubscriptionID{0,1}</b> , <b>disputemanagementdtns:disputeInitiator{0,1}</b> , <b>disputemanagementdtns:disputeState{0,1}</b> , <b>disputemanagementdtns:refundAmount{0,1}</b> , <b>disputemanagementdtns:blockedBalance{0,1}</b> , <b>disputemanagementdtns:blockBalanceFailed{0,1}</b> , <b>disputemanagementdtns:blockBalanceFailedReasonDescription{0,1}</b> , <b>disputemanagementdtns:disputeFeeAppliedTo{0,1}</b> , <b>disputemanagementdtns:disputeFeeApplied{0,1}</b> , <b>disputemanagementdtns:transferDate{0,1}</b> , <b>disputemanagementdtns:disputeCreateDate{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:blockBalanceFailed</b>, <b>disputemanagementdtns:blockBalanceFailedReasonDescription</b>, <b>disputemanagementdtns:blockedBalance</b>, <b>disputemanagementdtns:contributorSubscriptionID</b>, <b>disputemanagementdtns:disputeCreateDate</b>, <b>disputemanagementdtns:disputeFeeApplied</b>, <b>disputemanagementdtns:disputeFeeAppliedTo</b>, <b>disputemanagementdtns:disputeId</b>, <b>disputemanagementdtns:disputeInitiator</b>, <b>disputemanagementdtns:disputeState</b>, <b>disputemanagementdtns:externalTransactionNumber</b>, <b>disputemanagementdtns:recipientSubscriptionID</b>, <b>disputemanagementdtns:refundAmount</b>, <b>disputemanagementdtns:transferDate</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DisputeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DisputeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DisputeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"DisputeReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"disputeId"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"externalTransactionNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"contributorSubscriptionID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"recipientSubscriptionID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"disputeInitiator"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:DisputeInitiator"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"disputeState"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:DisputeStatus"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"refundAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"blockedBalance"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"blockBalanceFailed"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"blockBalanceFailedReasonDescription"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"disputeFeeAppliedTo"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:DisputeInitiator"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"disputeFeeApplied"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"transferDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"disputeCreateDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DisputeInitiator"></a><div class="componentTitle">Simple Type <span class="qname">disputemanagementdtns:DisputeInitiator</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DisputeInitiator" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DisputeInitiator');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DisputeInitiator" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Simple_Type_disputemanagementdtns_DisputeInitiator.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_DisputeInitiator" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_DisputeInitiator');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_DisputeInitiator" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">CONTRIBUTOR</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">RECIPIENT</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>-1</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">NO-FEE</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_DisputeInitiator" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_DisputeInitiator');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_DisputeInitiator" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>disputemanagementdtns:DisputeReference/disputemanagementdtns:disputeFeeAppliedTo</b>, <b>disputemanagementdtns:DisputeReference/disputemanagementdtns:disputeInitiator</b>, <b>tns:createDisputeRequest/tns:disputeInitiator</b>, <b>tns:resolveDisputeRequest/tns:applydisputeFeeTo</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DisputeInitiator" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DisputeInitiator');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DisputeInitiator" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"DisputeInitiator"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">CONTRIBUTOR</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">RECIPIENT</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"-1"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">NO-FEE</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DisputeStatus"></a><div class="componentTitle">Simple Type <span class="qname">disputemanagementdtns:DisputeStatus</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DisputeStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DisputeStatus');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DisputeStatus" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Simple_Type_disputemanagementdtns_DisputeStatus.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_DisputeStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_DisputeStatus');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_DisputeStatus" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">INITIATED</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">ASSIGNED</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">ACCEPTED</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>3</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%">
+                                                   <pre><span class="tT">REJECTED</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_DisputeStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_DisputeStatus');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_DisputeStatus" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>disputemanagementdtns:DisputeReference/disputemanagementdtns:disputeState</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DisputeStatus" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DisputeStatus');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DisputeStatus" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"DisputeStatus"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">INITIATED</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">ASSIGNED</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">ACCEPTED</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"3"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">REJECTED</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="TransferQueryResult"></a><div class="componentTitle">Complex Type <span class="qname">disputemanagementdtns:TransferQueryResult</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_TransferQueryResult" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferQueryResult.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferQueryResult" /><map name="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferQueryResult" id="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferQueryResult"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_TransferQueryResult" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="DisputeManagement_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferQueryResult" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:TransferQueryResult</a></b>, <b>tns:listAccountTransferResponse/tns:return</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('model_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_TransferQueryResult" style="display:block"><b>disputemanagementdtns:pageKey{0,1}</b> , <b>disputemanagementdtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:pageKey</b>, <b>disputemanagementdtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_TransferQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('source_TransferQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_TransferQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"TransferQueryResult"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"pageKey"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> name=</span><span class="tAV">"references"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:TransferReference"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="TransferReference"></a><div class="componentTitle">Complex Type <span class="qname">disputemanagementdtns:TransferReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_TransferReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_TransferReference" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferReference.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferReference" /><map name="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferReference" id="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_TransferReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_TransferReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_TransferReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>disputemanagementdtns:TransferQueryResult/disputemanagementdtns:references</b>, <b><a href="DisputeManagement_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_TransferReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:TransferReference</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_TransferReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_TransferReference" style="display:block"><b>disputemanagementdtns:externalTransactionNumber{0,1}</b> , <b>disputemanagementdtns:contributorSubscriptionID{0,1}</b> , <b>disputemanagementdtns:contributorMobileNumber{0,1}</b> , <b>disputemanagementdtns:recipientSubscriptionID{0,1}</b> , <b>disputemanagementdtns:recipientMobileNumber{0,1}</b> , <b>disputemanagementdtns:contributorAmount{0,1}</b> , <b>disputemanagementdtns:transferDate{0,1}</b> , <b>disputemanagementdtns:currentDisputeId{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:contributorAmount</b>, <b>disputemanagementdtns:contributorMobileNumber</b>, <b>disputemanagementdtns:contributorSubscriptionID</b>, <b>disputemanagementdtns:currentDisputeId</b>, <b>disputemanagementdtns:externalTransactionNumber</b>, <b>disputemanagementdtns:recipientMobileNumber</b>, <b>disputemanagementdtns:recipientSubscriptionID</b>, <b>disputemanagementdtns:transferDate</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_TransferReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_TransferReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_TransferReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"TransferReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"externalTransactionNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"contributorSubscriptionID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"contributorMobileNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"recipientSubscriptionID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"recipientMobileNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"contributorAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"transferDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"currentDisputeId"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DisputeQueryResult"></a><div class="componentTitle">Complex Type <span class="qname">disputemanagementdtns:DisputeQueryResult</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DisputeQueryResult" style="display:block"><img alt="Diagram" border="0" src="img/DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeQueryResult.jpeg" usemap="#DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeQueryResult" /><map name="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeQueryResult" id="DisputeManagement_types_1_0_xsd_Complex_Type_disputemanagementdtns_DisputeQueryResult"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_DisputeQueryResult" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="DisputeManagement_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_disputemanagement_xsd_2010_01_DisputeQueryResult" target="mainFrame" title="http://soap.crmapi.util.redknee.com/disputemanagement/xsd/2010/01" onclick="updatePageTitle('Documentation for DisputeManagement_types_1_0.xsd')">disputemanagementdtns:DisputeQueryResult</a></b>, <b>tns:listAccountDisputesResponse/tns:return</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('model_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_DisputeQueryResult" style="display:block"><b>disputemanagementdtns:pageKey{0,1}</b> , <b>disputemanagementdtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>disputemanagementdtns:pageKey</b>, <b>disputemanagementdtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DisputeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DisputeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DisputeQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"DisputeQueryResult"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"pageKey"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> name=</span><span class="tAV">"references"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"disputemanagementdtns:DisputeReference"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/DisputeManagement_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

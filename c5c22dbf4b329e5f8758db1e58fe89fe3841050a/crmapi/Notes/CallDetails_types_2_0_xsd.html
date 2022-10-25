@@ -1,0 +1,1967 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_CallDetails_types_2_0.xsd', 
+				'properties_CallDetail', 
+				'properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference', 
+				'properties_CallDetailQueryResponse', 
+				'properties_DetailedCallDetailQueryResponse', 
+				'properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo', 
+				'properties_CallDetailWithBundles', 
+				'properties_DetailedCallDetailWithBundlesQueryResponse');
+var usedByBoxes= new Array('usedBy_ChargedBundleInfo', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail', 
+				'usedBy_CallDetailReference', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');
+var sourceBoxes= new Array('source_CallDetail', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference', 
+				'source_CallDetailQueryResponse', 
+				'source_DetailedCallDetailQueryResponse', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo', 
+				'source_CallDetailWithBundles', 
+				'source_DetailedCallDetailWithBundlesQueryResponse', 
+				'source_ChargedBundleInfo', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail', 
+				'source_CallDetailReference', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');
+var instanceBoxes= new Array('instance_CallDetail', 
+				'instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference', 
+				'instance_CallDetailQueryResponse', 
+				'instance_DetailedCallDetailQueryResponse', 
+				'instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo', 
+				'instance_CallDetailWithBundles', 
+				'instance_DetailedCallDetailWithBundlesQueryResponse');
+var diagramBoxes= new Array('diagram_CallDetail', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference', 
+				'diagram_CallDetailQueryResponse', 
+				'diagram_DetailedCallDetailQueryResponse', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo', 
+				'diagram_CallDetailWithBundles', 
+				'diagram_DetailedCallDetailWithBundlesQueryResponse', 
+				'diagram_ChargedBundleInfo', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail', 
+				'diagram_CallDetailReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');
+var modelBoxes= new Array('model_CallDetail', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference', 
+				'model_CallDetailQueryResponse', 
+				'model_DetailedCallDetailQueryResponse', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo', 
+				'model_CallDetailWithBundles', 
+				'model_DetailedCallDetailWithBundlesQueryResponse', 
+				'model_ChargedBundleInfo', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail', 
+				'model_CallDetailReference', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="CallDetails_types_2_0.xsd"></a><div class="componentTitle">Imported schema <span class="qname">CallDetails_types_2_0.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CallDetails_types_2_0.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CallDetails_types_2_0.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CallDetails_types_2_0.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetail"></a><div class="componentTitle">Element <span class="qname">calldetaildtns:CallDetail</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CallDetail');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CallDetail" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetail.jpeg" usemap="#CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetail" /><map name="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetail" id="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetail"><area alt="CallDetails_types_2_0_xsd.tmp#CallDetailReference" href="CallDetails_types_2_0_xsd.html#CallDetailReference" coords="126,43,446,65" /><area alt="CallDetails_types_2_0_xsd.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" coords="112,3,287,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#CallDetailReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CallDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CallDetail" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('model_CallDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_CallDetail" style="display:block"><b>calldetaildtns:accountID{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:callType{0,1}</b> , <b>calldetaildtns:charge{0,1}</b> , <b>calldetaildtns:dataUsage{0,1}</b> , <b>calldetaildtns:destinationLocation{0,1}</b> , <b>calldetaildtns:destinationNumber{0,1}</b> , <b>calldetaildtns:duration{0,1}</b> , <b>calldetaildtns:identifier{0,1}</b> , <b>calldetaildtns:mobileNumber{0,1}</b> , <b>calldetaildtns:originatingLocation{0,1}</b> , <b>calldetaildtns:originatingNumber{0,1}</b> , <b>calldetaildtns:transactionDate{0,1}</b> , <b>calldetaildtns:usageType{0,1}</b> , <b>calldetaildtns:parameters*</b> , <b>calldetaildtns:billingCategoryID{0,1}</b> , <b>calldetaildtns:bucketRateID{0,1}</b> , <b>calldetaildtns:flatRate{0,1}</b> , <b>calldetaildtns:glCode{0,1}</b> , <b>calldetaildtns:postedDate{0,1}</b> , <b>calldetaildtns:primaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:ratePlan{0,1}</b> , <b>calldetaildtns:ratingRule{0,1}</b> , <b>calldetaildtns:secondaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:subscriberType{0,1}</b> , <b>calldetaildtns:usedBucketMinutes{0,1}</b> , <b>calldetaildtns:variableRate{0,1}</b> , <b>calldetaildtns:variableRateUnits{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:accountID</b>, <b>calldetaildtns:balance</b>, <b>calldetaildtns:billingCategoryID</b>, <b>calldetaildtns:bucketRateID</b>, <b>calldetaildtns:callType</b>, <b>calldetaildtns:charge</b>, <b>calldetaildtns:dataUsage</b>, <b>calldetaildtns:destinationLocation</b>, <b>calldetaildtns:destinationNumber</b>, <b>calldetaildtns:duration</b>, <b>calldetaildtns:flatRate</b>, <b>calldetaildtns:glCode</b>, <b>calldetaildtns:identifier</b>, <b>calldetaildtns:mobileNumber</b>, <b>calldetaildtns:originatingLocation</b>, <b>calldetaildtns:originatingNumber</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:postedDate</b>, <b>calldetaildtns:primaryTaxAuthorityID</b>, <b>calldetaildtns:ratePlan</b>, <b>calldetaildtns:ratingRule</b>, <b>calldetaildtns:secondaryTaxAuthorityID</b>, <b>calldetaildtns:subscriberType</b>, <b>calldetaildtns:transactionDate</b>, <b>calldetaildtns:usageType</b>, <b>calldetaildtns:usedBucketMinutes</b>, <b>calldetaildtns:variableRate</b>, <b>calldetaildtns:variableRateUnits</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_CallDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_CallDetail" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;calldetaildtns:CallDetail</span><span class="tT"> </span><span class="tAN">xmlns:calldetaildtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:accountID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:accountID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:balance</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:balance&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:callType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:callType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:charge</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:charge&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:dataUsage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:dataUsage&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:destinationLocation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:destinationLocation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:destinationNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:destinationNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:duration</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:duration&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:mobileNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:mobileNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:originatingLocation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:originatingLocation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:originatingNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:originatingNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:transactionDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:transactionDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:usageType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:usageType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:parameters</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:parameters&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:billingCategoryID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:billingCategoryID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:bucketRateID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:bucketRateID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:flatRate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:flatRate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:glCode</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:glCode&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:postedDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:postedDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:primaryTaxAuthorityID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:primaryTaxAuthorityID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:ratePlan</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:ratePlan&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:ratingRule</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:ratingRule&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:secondaryTaxAuthorityID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:secondaryTaxAuthorityID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:subscriberType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:subscriberType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:usedBucketMinutes</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:usedBucketMinutes&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:variableRate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:variableRate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:variableRateUnits</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:variableRateUnits&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/calldetaildtns:CallDetail&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CallDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CallDetail" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"CallDetail"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallDetail"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference"></a><div class="componentTitle">Element <span class="qname">calldetaildtns:CallDetailReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailReference.jpeg" usemap="#CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailReference" /><map name="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailReference" id="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailReference"><area alt="CallDetails_types_2_0_xsd.tmp#CallDetailReference" href="CallDetails_types_2_0_xsd.html#CallDetailReference" coords="165,3,393,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_types_2_0_xsd.html#CallDetailReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" style="display:block"><b>calldetaildtns:accountID{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:callType{0,1}</b> , <b>calldetaildtns:charge{0,1}</b> , <b>calldetaildtns:dataUsage{0,1}</b> , <b>calldetaildtns:destinationLocation{0,1}</b> , <b>calldetaildtns:destinationNumber{0,1}</b> , <b>calldetaildtns:duration{0,1}</b> , <b>calldetaildtns:identifier{0,1}</b> , <b>calldetaildtns:mobileNumber{0,1}</b> , <b>calldetaildtns:originatingLocation{0,1}</b> , <b>calldetaildtns:originatingNumber{0,1}</b> , <b>calldetaildtns:transactionDate{0,1}</b> , <b>calldetaildtns:usageType{0,1}</b> , <b>calldetaildtns:parameters*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:accountID</b>, <b>calldetaildtns:balance</b>, <b>calldetaildtns:callType</b>, <b>calldetaildtns:charge</b>, <b>calldetaildtns:dataUsage</b>, <b>calldetaildtns:destinationLocation</b>, <b>calldetaildtns:destinationNumber</b>, <b>calldetaildtns:duration</b>, <b>calldetaildtns:identifier</b>, <b>calldetaildtns:mobileNumber</b>, <b>calldetaildtns:originatingLocation</b>, <b>calldetaildtns:originatingNumber</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:transactionDate</b>, <b>calldetaildtns:usageType</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;calldetaildtns:CallDetailReference</span><span class="tT"> </span><span class="tAN">xmlns:calldetaildtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:accountID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:accountID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:balance</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:balance&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:callType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:callType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:charge</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:charge&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:dataUsage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:dataUsage&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:destinationLocation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:destinationLocation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:destinationNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:destinationNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:duration</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:duration&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:mobileNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:mobileNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:originatingLocation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:originatingLocation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:originatingNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:originatingNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:transactionDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:transactionDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:usageType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:usageType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:parameters</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:parameters&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/calldetaildtns:CallDetailReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"CallDetailReference"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallDetailReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetailQueryResponse"></a><div class="componentTitle">Element <span class="qname">calldetaildtns:CallDetailQueryResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CallDetailQueryResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailQueryResponse.jpeg" usemap="#CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailQueryResponse" /><map name="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailQueryResponse" id="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailQueryResponse"><area alt="CallDetails_types_2_0_xsd.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" coords="197,3,457,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailQueryResponse</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CallDetailQueryResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_CallDetailQueryResponse" style="display:block"><b>calldetaildtns:pageKey{0,1}</b> , <b>calldetaildtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:pageKey</b>, <b>calldetaildtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_CallDetailQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;calldetaildtns:CallDetailQueryResponse</span><span class="tT"> </span><span class="tAN">xmlns:calldetaildtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:pageKey</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:pageKey&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:references</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:references&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/calldetaildtns:CallDetailQueryResponse&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CallDetailQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"CallDetailQueryResponse"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallDetailQueryResponse"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DetailedCallDetailQueryResponse"></a><div class="componentTitle">Element <span class="qname">calldetaildtns:DetailedCallDetailQueryResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DetailedCallDetailQueryResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailQueryResponse.jpeg" usemap="#CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailQueryResponse" /><map name="CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailQueryResponse" id="CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailQueryResponse"><area alt="CallDetails_types_2_0_xsd.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" coords="240,3,543,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:DetailedCallDetailQueryResponse</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_DetailedCallDetailQueryResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_DetailedCallDetailQueryResponse" style="display:block"><b>calldetaildtns:pageKey{0,1}</b> , <b>calldetaildtns:results*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:pageKey</b>, <b>calldetaildtns:results</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_DetailedCallDetailQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;calldetaildtns:DetailedCallDetailQueryResponse</span><span class="tT"> </span><span class="tAN">xmlns:calldetaildtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:pageKey</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:pageKey&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:results</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:results&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/calldetaildtns:DetailedCallDetailQueryResponse&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DetailedCallDetailQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"DetailedCallDetailQueryResponse"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:DetailedCallDetailQueryResponse"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo"></a><div class="componentTitle">Element <span class="qname">calldetaildtns:ChargedBundleInfo</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Element_calldetaildtns_ChargedBundleInfo.jpeg" usemap="#CallDetails_types_2_0_xsd_Element_calldetaildtns_ChargedBundleInfo" /><map name="CallDetails_types_2_0_xsd_Element_calldetaildtns_ChargedBundleInfo" id="CallDetails_types_2_0_xsd_Element_calldetaildtns_ChargedBundleInfo"><area alt="CallDetails_types_2_0_xsd.tmp#ChargedBundleInfo" href="CallDetails_types_2_0_xsd.html#ChargedBundleInfo" coords="165,3,393,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_types_2_0_xsd.html#ChargedBundleInfo" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:ChargedBundleInfo</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" style="display:block"><b>calldetaildtns:bundleId{0,1}</b> , <b>calldetaildtns:unitType{0,1}</b> , <b>calldetaildtns:chargedAmount{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:bundleCategoryId{0,1}</b> , <b>calldetaildtns:bundleCategoryDesc{0,1}</b> , <b>calldetaildtns:parameters*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:balance</b>, <b>calldetaildtns:bundleCategoryDesc</b>, <b>calldetaildtns:bundleCategoryId</b>, <b>calldetaildtns:bundleId</b>, <b>calldetaildtns:chargedAmount</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:unitType</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;calldetaildtns:ChargedBundleInfo</span><span class="tT"> </span><span class="tAN">xmlns:calldetaildtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:bundleId</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:bundleId&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:unitType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:unitType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:chargedAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:chargedAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:balance</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:balance&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:bundleCategoryId</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:bundleCategoryId&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:bundleCategoryDesc</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:bundleCategoryDesc&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:parameters</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:parameters&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/calldetaildtns:ChargedBundleInfo&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ChargedBundleInfo"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:ChargedBundleInfo"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetailWithBundles"></a><div class="componentTitle">Element <span class="qname">calldetaildtns:CallDetailWithBundles</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CallDetailWithBundles" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailWithBundles.jpeg" usemap="#CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailWithBundles" /><map name="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailWithBundles" id="CallDetails_types_2_0_xsd_Element_calldetaildtns_CallDetailWithBundles"><area alt="CallDetails_types_2_0_xsd.tmp#CallDetailReference" href="CallDetails_types_2_0_xsd.html#CallDetailReference" coords="205,83,525,105" /><area alt="CallDetails_types_2_0_xsd.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" coords="191,43,458,65" /><area alt="CallDetails_types_2_0_xsd.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" coords="177,3,417,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailWithBundles</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#CallDetailReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b><ul class="internal">
+                                          <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailWithBundles</a></b></li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CallDetailWithBundles" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('model_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_CallDetailWithBundles" style="display:block"><b>calldetaildtns:accountID{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:callType{0,1}</b> , <b>calldetaildtns:charge{0,1}</b> , <b>calldetaildtns:dataUsage{0,1}</b> , <b>calldetaildtns:destinationLocation{0,1}</b> , <b>calldetaildtns:destinationNumber{0,1}</b> , <b>calldetaildtns:duration{0,1}</b> , <b>calldetaildtns:identifier{0,1}</b> , <b>calldetaildtns:mobileNumber{0,1}</b> , <b>calldetaildtns:originatingLocation{0,1}</b> , <b>calldetaildtns:originatingNumber{0,1}</b> , <b>calldetaildtns:transactionDate{0,1}</b> , <b>calldetaildtns:usageType{0,1}</b> , <b>calldetaildtns:parameters*</b> , <b>calldetaildtns:billingCategoryID{0,1}</b> , <b>calldetaildtns:bucketRateID{0,1}</b> , <b>calldetaildtns:flatRate{0,1}</b> , <b>calldetaildtns:glCode{0,1}</b> , <b>calldetaildtns:postedDate{0,1}</b> , <b>calldetaildtns:primaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:ratePlan{0,1}</b> , <b>calldetaildtns:ratingRule{0,1}</b> , <b>calldetaildtns:secondaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:subscriberType{0,1}</b> , <b>calldetaildtns:usedBucketMinutes{0,1}</b> , <b>calldetaildtns:variableRate{0,1}</b> , <b>calldetaildtns:variableRateUnits{0,1}</b> , <b>calldetaildtns:bundleInfo*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:accountID</b>, <b>calldetaildtns:balance</b>, <b>calldetaildtns:billingCategoryID</b>, <b>calldetaildtns:bucketRateID</b>, <b>calldetaildtns:bundleInfo</b>, <b>calldetaildtns:callType</b>, <b>calldetaildtns:charge</b>, <b>calldetaildtns:dataUsage</b>, <b>calldetaildtns:destinationLocation</b>, <b>calldetaildtns:destinationNumber</b>, <b>calldetaildtns:duration</b>, <b>calldetaildtns:flatRate</b>, <b>calldetaildtns:glCode</b>, <b>calldetaildtns:identifier</b>, <b>calldetaildtns:mobileNumber</b>, <b>calldetaildtns:originatingLocation</b>, <b>calldetaildtns:originatingNumber</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:postedDate</b>, <b>calldetaildtns:primaryTaxAuthorityID</b>, <b>calldetaildtns:ratePlan</b>, <b>calldetaildtns:ratingRule</b>, <b>calldetaildtns:secondaryTaxAuthorityID</b>, <b>calldetaildtns:subscriberType</b>, <b>calldetaildtns:transactionDate</b>, <b>calldetaildtns:usageType</b>, <b>calldetaildtns:usedBucketMinutes</b>, <b>calldetaildtns:variableRate</b>, <b>calldetaildtns:variableRateUnits</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_CallDetailWithBundles" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;calldetaildtns:CallDetailWithBundles</span><span class="tT"> </span><span class="tAN">xmlns:calldetaildtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:accountID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:accountID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:balance</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:balance&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:callType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:callType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:charge</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:charge&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:dataUsage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:dataUsage&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:destinationLocation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:destinationLocation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:destinationNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:destinationNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:duration</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:duration&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:mobileNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:mobileNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:originatingLocation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:originatingLocation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:originatingNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:originatingNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:transactionDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:transactionDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:usageType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:usageType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:parameters</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:parameters&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:billingCategoryID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:billingCategoryID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:bucketRateID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:bucketRateID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:flatRate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:flatRate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:glCode</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:glCode&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:postedDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:postedDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:primaryTaxAuthorityID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:primaryTaxAuthorityID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:ratePlan</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:ratePlan&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:ratingRule</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:ratingRule&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:secondaryTaxAuthorityID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:secondaryTaxAuthorityID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:subscriberType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:subscriberType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:usedBucketMinutes</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:usedBucketMinutes&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:variableRate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:variableRate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:variableRateUnits</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:variableRateUnits&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:bundleInfo</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:bundleInfo&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/calldetaildtns:CallDetailWithBundles&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CallDetailWithBundles" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"CallDetailWithBundles"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallDetailWithBundles"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DetailedCallDetailWithBundlesQueryResponse"></a><div class="componentTitle">Element <span class="qname">calldetaildtns:DetailedCallDetailWithBundlesQueryResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DetailedCallDetailWithBundlesQueryResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse.jpeg" usemap="#CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse" /><map name="CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse" id="CallDetails_types_2_0_xsd_Element_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse"><area alt="CallDetails_types_2_0_xsd.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" coords="305,3,673,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:DetailedCallDetailWithBundlesQueryResponse</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_DetailedCallDetailWithBundlesQueryResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_DetailedCallDetailWithBundlesQueryResponse" style="display:block"><b>calldetaildtns:pageKey{0,1}</b> , <b>calldetaildtns:results*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:pageKey</b>, <b>calldetaildtns:results</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_DetailedCallDetailWithBundlesQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;calldetaildtns:DetailedCallDetailWithBundlesQueryResponse</span><span class="tT"> </span><span class="tAN">xmlns:calldetaildtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:pageKey</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/calldetaildtns:pageKey&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;calldetaildtns:results</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/calldetaildtns:results&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/calldetaildtns:DetailedCallDetailWithBundlesQueryResponse&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DetailedCallDetailWithBundlesQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"DetailedCallDetailWithBundlesQueryResponse"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:DetailedCallDetailWithBundlesQueryResponse"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ChargedBundleInfo"></a><div class="componentTitle">Complex Type <span class="qname">calldetaildtns:ChargedBundleInfo</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ChargedBundleInfo" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_ChargedBundleInfo.jpeg" usemap="#CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_ChargedBundleInfo" /><map name="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_ChargedBundleInfo" id="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_ChargedBundleInfo"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_ChargedBundleInfo" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>calldetaildtns:CallDetailWithBundles/calldetaildtns:bundleInfo</b>, <b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_ChargedBundleInfo" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:ChargedBundleInfo</a></b>, <b>subscriptiondtns:MergedBalanceHistory/subscriptiondtns:bundleInfo</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('model_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_ChargedBundleInfo" style="display:block"><b>calldetaildtns:bundleId{0,1}</b> , <b>calldetaildtns:unitType{0,1}</b> , <b>calldetaildtns:chargedAmount{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:bundleCategoryId{0,1}</b> , <b>calldetaildtns:bundleCategoryDesc{0,1}</b> , <b>calldetaildtns:parameters*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:balance</b>, <b>calldetaildtns:bundleCategoryDesc</b>, <b>calldetaildtns:bundleCategoryId</b>, <b>calldetaildtns:bundleId</b>, <b>calldetaildtns:chargedAmount</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:unitType</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ChargedBundleInfo" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ChargedBundleInfo');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ChargedBundleInfo" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"ChargedBundleInfo"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"bundleId"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"unitType"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"servicesandbundlestns:BundleType"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"chargedAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"balance"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"bundleCategoryId"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"bundleCategoryDesc"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"parameters"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"dtns:GenericParameter"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail"></a><div class="componentTitle">Complex Type <span class="qname">calldetaildtns:CallDetail</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetail.jpeg" usemap="#CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetail" /><map name="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetail" id="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetail"><area alt="CallDetails_types_2_0_xsd.tmp#CallDetailReference" href="CallDetails_types_2_0_xsd.html#CallDetailReference" coords="136,3,456,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="CallDetails_types_2_0_xsd.html#CallDetailReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#CallDetailReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="CallDetails_types_2_0_xsd.html#CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b>, <b>calldetaildtns:DetailedCallDetailQueryResponse/calldetaildtns:results</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailWithBundles</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" style="display:block"><b>calldetaildtns:accountID{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:callType{0,1}</b> , <b>calldetaildtns:charge{0,1}</b> , <b>calldetaildtns:dataUsage{0,1}</b> , <b>calldetaildtns:destinationLocation{0,1}</b> , <b>calldetaildtns:destinationNumber{0,1}</b> , <b>calldetaildtns:duration{0,1}</b> , <b>calldetaildtns:identifier{0,1}</b> , <b>calldetaildtns:mobileNumber{0,1}</b> , <b>calldetaildtns:originatingLocation{0,1}</b> , <b>calldetaildtns:originatingNumber{0,1}</b> , <b>calldetaildtns:transactionDate{0,1}</b> , <b>calldetaildtns:usageType{0,1}</b> , <b>calldetaildtns:parameters*</b> , <b>calldetaildtns:billingCategoryID{0,1}</b> , <b>calldetaildtns:bucketRateID{0,1}</b> , <b>calldetaildtns:flatRate{0,1}</b> , <b>calldetaildtns:glCode{0,1}</b> , <b>calldetaildtns:postedDate{0,1}</b> , <b>calldetaildtns:primaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:ratePlan{0,1}</b> , <b>calldetaildtns:ratingRule{0,1}</b> , <b>calldetaildtns:secondaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:subscriberType{0,1}</b> , <b>calldetaildtns:usedBucketMinutes{0,1}</b> , <b>calldetaildtns:variableRate{0,1}</b> , <b>calldetaildtns:variableRateUnits{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:accountID</b>, <b>calldetaildtns:balance</b>, <b>calldetaildtns:billingCategoryID</b>, <b>calldetaildtns:bucketRateID</b>, <b>calldetaildtns:callType</b>, <b>calldetaildtns:charge</b>, <b>calldetaildtns:dataUsage</b>, <b>calldetaildtns:destinationLocation</b>, <b>calldetaildtns:destinationNumber</b>, <b>calldetaildtns:duration</b>, <b>calldetaildtns:flatRate</b>, <b>calldetaildtns:glCode</b>, <b>calldetaildtns:identifier</b>, <b>calldetaildtns:mobileNumber</b>, <b>calldetaildtns:originatingLocation</b>, <b>calldetaildtns:originatingNumber</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:postedDate</b>, <b>calldetaildtns:primaryTaxAuthorityID</b>, <b>calldetaildtns:ratePlan</b>, <b>calldetaildtns:ratingRule</b>, <b>calldetaildtns:secondaryTaxAuthorityID</b>, <b>calldetaildtns:subscriberType</b>, <b>calldetaildtns:transactionDate</b>, <b>calldetaildtns:usageType</b>, <b>calldetaildtns:usedBucketMinutes</b>, <b>calldetaildtns:variableRate</b>, <b>calldetaildtns:variableRateUnits</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CallDetail"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"calldetaildtns:CallDetailReference"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"billingCategoryID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"bucketRateID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"flatRate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"glCode"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"postedDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"primaryTaxAuthorityID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ratePlan"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ratingRule"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"secondaryTaxAuthorityID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"subscriberType"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"dtns:PaidType"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"usedBucketMinutes"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"variableRate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"variableRateUnits"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"calldetailv1_0dtns:VariableRateUnitType"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetailReference"></a><div class="componentTitle">Complex Type <span class="qname">calldetaildtns:CallDetailReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CallDetailReference" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailReference.jpeg" usemap="#CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailReference" /><map name="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailReference" id="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_CallDetailReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>calldetaildtns:CallDetailQueryResponse/calldetaildtns:references</b>, <b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailReference</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_CallDetailReference" style="display:block"><b>calldetaildtns:accountID{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:callType{0,1}</b> , <b>calldetaildtns:charge{0,1}</b> , <b>calldetaildtns:dataUsage{0,1}</b> , <b>calldetaildtns:destinationLocation{0,1}</b> , <b>calldetaildtns:destinationNumber{0,1}</b> , <b>calldetaildtns:duration{0,1}</b> , <b>calldetaildtns:identifier{0,1}</b> , <b>calldetaildtns:mobileNumber{0,1}</b> , <b>calldetaildtns:originatingLocation{0,1}</b> , <b>calldetaildtns:originatingNumber{0,1}</b> , <b>calldetaildtns:transactionDate{0,1}</b> , <b>calldetaildtns:usageType{0,1}</b> , <b>calldetaildtns:parameters*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:accountID</b>, <b>calldetaildtns:balance</b>, <b>calldetaildtns:callType</b>, <b>calldetaildtns:charge</b>, <b>calldetaildtns:dataUsage</b>, <b>calldetaildtns:destinationLocation</b>, <b>calldetaildtns:destinationNumber</b>, <b>calldetaildtns:duration</b>, <b>calldetaildtns:identifier</b>, <b>calldetaildtns:mobileNumber</b>, <b>calldetaildtns:originatingLocation</b>, <b>calldetaildtns:originatingNumber</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:transactionDate</b>, <b>calldetaildtns:usageType</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CallDetailReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CallDetailReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CallDetailReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CallDetailReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"accountID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"balance"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"callType"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"charge"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"dataUsage"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"destinationLocation"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"destinationNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"duration"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"identifier"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"mobileNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"originatingLocation"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"originatingNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"transactionDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"usageType"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"parameters"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"dtns:GenericParameter"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse"></a><div class="componentTitle">Complex Type <span class="qname">calldetaildtns:CallDetailQueryResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailQueryResponse.jpeg" usemap="#CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailQueryResponse" /><map name="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailQueryResponse" id="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailQueryResponse"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="CallDetails_types_2_0_xsd.html#CallDetailQueryResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailQueryResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" style="display:block"><b>calldetaildtns:pageKey{0,1}</b> , <b>calldetaildtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:pageKey</b>, <b>calldetaildtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CallDetailQueryResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"pageKey"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> name=</span><span class="tAV">"references"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallDetailReference"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse"></a><div class="componentTitle">Complex Type <span class="qname">calldetaildtns:DetailedCallDetailQueryResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailQueryResponse.jpeg" usemap="#CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailQueryResponse" /><map name="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailQueryResponse" id="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailQueryResponse"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="CallDetails_types_2_0_xsd.html#DetailedCallDetailQueryResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:DetailedCallDetailQueryResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" style="display:block"><b>calldetaildtns:pageKey{0,1}</b> , <b>calldetaildtns:results*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:pageKey</b>, <b>calldetaildtns:results</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"DetailedCallDetailQueryResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"pageKey"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"results"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallDetail"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles"></a><div class="componentTitle">Complex Type <span class="qname">calldetaildtns:CallDetailWithBundles</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailWithBundles.jpeg" usemap="#CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailWithBundles" /><map name="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailWithBundles" id="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_CallDetailWithBundles"><area alt="CallDetails_types_2_0_xsd.tmp#CallDetailReference" href="CallDetails_types_2_0_xsd.html#CallDetailReference" coords="215,43,535,65" /><area alt="CallDetails_types_2_0_xsd.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" coords="201,3,468,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#CallDetailReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetail" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetail</a></b><ul class="internal">
+                                          <li class="internal"><b><a href="CallDetails_types_2_0_xsd.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailWithBundles</a></b></li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="CallDetails_types_2_0_xsd.html#CallDetailWithBundles" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:CallDetailWithBundles</a></b>, <b>calldetaildtns:DetailedCallDetailWithBundlesQueryResponse/calldetaildtns:results</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" style="display:block"><b>calldetaildtns:accountID{0,1}</b> , <b>calldetaildtns:balance{0,1}</b> , <b>calldetaildtns:callType{0,1}</b> , <b>calldetaildtns:charge{0,1}</b> , <b>calldetaildtns:dataUsage{0,1}</b> , <b>calldetaildtns:destinationLocation{0,1}</b> , <b>calldetaildtns:destinationNumber{0,1}</b> , <b>calldetaildtns:duration{0,1}</b> , <b>calldetaildtns:identifier{0,1}</b> , <b>calldetaildtns:mobileNumber{0,1}</b> , <b>calldetaildtns:originatingLocation{0,1}</b> , <b>calldetaildtns:originatingNumber{0,1}</b> , <b>calldetaildtns:transactionDate{0,1}</b> , <b>calldetaildtns:usageType{0,1}</b> , <b>calldetaildtns:parameters*</b> , <b>calldetaildtns:billingCategoryID{0,1}</b> , <b>calldetaildtns:bucketRateID{0,1}</b> , <b>calldetaildtns:flatRate{0,1}</b> , <b>calldetaildtns:glCode{0,1}</b> , <b>calldetaildtns:postedDate{0,1}</b> , <b>calldetaildtns:primaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:ratePlan{0,1}</b> , <b>calldetaildtns:ratingRule{0,1}</b> , <b>calldetaildtns:secondaryTaxAuthorityID{0,1}</b> , <b>calldetaildtns:subscriberType{0,1}</b> , <b>calldetaildtns:usedBucketMinutes{0,1}</b> , <b>calldetaildtns:variableRate{0,1}</b> , <b>calldetaildtns:variableRateUnits{0,1}</b> , <b>calldetaildtns:bundleInfo*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:accountID</b>, <b>calldetaildtns:balance</b>, <b>calldetaildtns:billingCategoryID</b>, <b>calldetaildtns:bucketRateID</b>, <b>calldetaildtns:bundleInfo</b>, <b>calldetaildtns:callType</b>, <b>calldetaildtns:charge</b>, <b>calldetaildtns:dataUsage</b>, <b>calldetaildtns:destinationLocation</b>, <b>calldetaildtns:destinationNumber</b>, <b>calldetaildtns:duration</b>, <b>calldetaildtns:flatRate</b>, <b>calldetaildtns:glCode</b>, <b>calldetaildtns:identifier</b>, <b>calldetaildtns:mobileNumber</b>, <b>calldetaildtns:originatingLocation</b>, <b>calldetaildtns:originatingNumber</b>, <b>calldetaildtns:parameters</b>, <b>calldetaildtns:postedDate</b>, <b>calldetaildtns:primaryTaxAuthorityID</b>, <b>calldetaildtns:ratePlan</b>, <b>calldetaildtns:ratingRule</b>, <b>calldetaildtns:secondaryTaxAuthorityID</b>, <b>calldetaildtns:subscriberType</b>, <b>calldetaildtns:transactionDate</b>, <b>calldetaildtns:usageType</b>, <b>calldetaildtns:usedBucketMinutes</b>, <b>calldetaildtns:variableRate</b>, <b>calldetaildtns:variableRateUnits</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_CallDetailWithBundles" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CallDetailWithBundles"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"calldetaildtns:CallDetail"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"bundleInfo"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:ChargedBundleInfo"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse"></a><div class="componentTitle">Complex Type <span class="qname">calldetaildtns:DetailedCallDetailWithBundlesQueryResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse.jpeg" usemap="#CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse" /><map name="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse" id="CallDetails_types_2_0_xsd_Complex_Type_calldetaildtns_DetailedCallDetailWithBundlesQueryResponse"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="CallDetails_types_2_0_xsd.html#DetailedCallDetailWithBundlesQueryResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/2011/03" onclick="updatePageTitle('Documentation for CallDetails_types_2_0.xsd')">calldetaildtns:DetailedCallDetailWithBundlesQueryResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" style="display:block"><b>calldetaildtns:pageKey{0,1}</b> , <b>calldetaildtns:results*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>calldetaildtns:pageKey</b>, <b>calldetaildtns:results</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_2011_03_DetailedCallDetailWithBundlesQueryResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"DetailedCallDetailWithBundlesQueryResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"pageKey"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"results"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallDetailWithBundles"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_types_2_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

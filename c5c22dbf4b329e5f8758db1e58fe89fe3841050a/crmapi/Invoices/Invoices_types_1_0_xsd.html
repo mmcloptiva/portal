@@ -1,0 +1,2047 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_Invoices_types_1_0.xsd', 
+				'properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle', 
+				'properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference', 
+				'properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference', 
+				'properties_PaymentPlan', 
+				'properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference', 
+				'properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption');
+var facetsBoxes= new Array('facets_PaymentPlanState', 
+				'facets_DeliveryType', 
+				'facets_SettlementState');
+var usedByBoxes= new Array('usedBy_BillCycle', 
+				'usedBy_BillCycleReference', 
+				'usedBy_InvoiceReference', 
+				'usedBy_PaymentPlanReference', 
+				'usedBy_PaymentPlanState', 
+				'usedBy_InvoiceDeliveryOption', 
+				'usedBy_DeliveryType', 
+				'usedBy_SettlementState', 
+				'usedBy_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');
+var sourceBoxes= new Array('source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle', 
+				'source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference', 
+				'source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference', 
+				'source_PaymentPlan', 
+				'source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference', 
+				'source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption', 
+				'source_BillCycle', 
+				'source_BillCycleReference', 
+				'source_InvoiceReference', 
+				'source_PaymentPlanReference', 
+				'source_PaymentPlanState', 
+				'source_InvoiceDeliveryOption', 
+				'source_DeliveryType', 
+				'source_SettlementState', 
+				'source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');
+var instanceBoxes= new Array('instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle', 
+				'instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference', 
+				'instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference', 
+				'instance_PaymentPlan', 
+				'instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference', 
+				'instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption');
+var diagramBoxes= new Array('diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle', 
+				'diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference', 
+				'diagram_PaymentPlan', 
+				'diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption', 
+				'diagram_BillCycle', 
+				'diagram_BillCycleReference', 
+				'diagram_InvoiceReference', 
+				'diagram_PaymentPlanReference', 
+				'diagram_PaymentPlanState', 
+				'diagram_InvoiceDeliveryOption', 
+				'diagram_DeliveryType', 
+				'diagram_SettlementState', 
+				'diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');
+var modelBoxes= new Array('model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle', 
+				'model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference', 
+				'model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference', 
+				'model_PaymentPlan', 
+				'model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference', 
+				'model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption', 
+				'model_BillCycle', 
+				'model_BillCycleReference', 
+				'model_InvoiceReference', 
+				'model_PaymentPlanReference', 
+				'model_InvoiceDeliveryOption', 
+				'model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, facetsBoxes);" class="control" /></span><span class="globalControlName">Facets </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="Invoices_types_1_0.xsd"></a><div class="componentTitle">Imported schema <span class="qname">Invoices_types_1_0.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_Invoices_types_1_0.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_Invoices_types_1_0.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_Invoices_types_1_0.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle"></a><div class="componentTitle">Element <span class="qname">invoicedtns:BillCycle</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Element_invoicedtns_BillCycle.jpeg" usemap="#Invoices_types_1_0_xsd_Element_invoicedtns_BillCycle" /><map name="Invoices_types_1_0_xsd_Element_invoicedtns_BillCycle" id="Invoices_types_1_0_xsd_Element_invoicedtns_BillCycle"><area alt="Invoices_types_1_0_xsd.tmp#BillCycleReference" href="Invoices_types_1_0_xsd.html#BillCycleReference" coords="120,43,425,65" /><area alt="Invoices_types_1_0_xsd.tmp#BillCycle" href="Invoices_types_1_0_xsd.html#BillCycle" coords="106,3,266,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Invoices_types_1_0_xsd.html#BillCycle" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycle</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#BillCycleReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycleReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#BillCycle" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycle</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" style="display:block"><b>invoicedtns:dayOfMonth{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b> , <b>invoicedtns:billingMessage*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:billingMessage</b>, <b>invoicedtns:dayOfMonth</b>, <b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:spid</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;invoicedtns:BillCycle</span><span class="tT"> </span><span class="tAN">xmlns:invoicedtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:dayOfMonth</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:dayOfMonth&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:spid&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:billingMessage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/invoicedtns:billingMessage&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/invoicedtns:BillCycle&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"BillCycle"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:BillCycle"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference"></a><div class="componentTitle">Element <span class="qname">invoicedtns:BillCycleReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Element_invoicedtns_BillCycleReference.jpeg" usemap="#Invoices_types_1_0_xsd_Element_invoicedtns_BillCycleReference" /><map name="Invoices_types_1_0_xsd_Element_invoicedtns_BillCycleReference" id="Invoices_types_1_0_xsd_Element_invoicedtns_BillCycleReference"><area alt="Invoices_types_1_0_xsd.tmp#BillCycleReference" href="Invoices_types_1_0_xsd.html#BillCycleReference" coords="159,3,372,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Invoices_types_1_0_xsd.html#BillCycleReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycleReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" style="display:block"><b>invoicedtns:dayOfMonth{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:dayOfMonth</b>, <b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:spid</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;invoicedtns:BillCycleReference</span><span class="tT"> </span><span class="tAN">xmlns:invoicedtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:dayOfMonth</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:dayOfMonth&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:spid&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/invoicedtns:BillCycleReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"BillCycleReference"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:BillCycleReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference"></a><div class="componentTitle">Element <span class="qname">invoicedtns:InvoiceReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceReference.jpeg" usemap="#Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceReference" /><map name="Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceReference" id="Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceReference"><area alt="Invoices_types_1_0_xsd.tmp#InvoiceReference" href="Invoices_types_1_0_xsd.html#InvoiceReference" coords="153,3,360,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Invoices_types_1_0_xsd.html#InvoiceReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:InvoiceReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" style="display:block"><b>invoicedtns:accountID{0,1}</b> , <b>invoicedtns:currentAmount{0,1}</b> , <b>invoicedtns:currentTaxAmount{0,1}</b> , <b>invoicedtns:discountAmount{0,1}</b> , <b>invoicedtns:dueDate{0,1}</b> , <b>invoicedtns:generationDate{0,1}</b> , <b>invoicedtns:invoiceDate{0,1}</b> , <b>invoicedtns:invoiceID{0,1}</b> , <b>invoicedtns:paymentAmount{0,1}</b> , <b>invoicedtns:pdfFilePath{0,1}</b> , <b>invoicedtns:previousBalance{0,1}</b> , <b>invoicedtns:totalAmount{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:accountID</b>, <b>invoicedtns:currentAmount</b>, <b>invoicedtns:currentTaxAmount</b>, <b>invoicedtns:discountAmount</b>, <b>invoicedtns:dueDate</b>, <b>invoicedtns:generationDate</b>, <b>invoicedtns:invoiceDate</b>, <b>invoicedtns:invoiceID</b>, <b>invoicedtns:paymentAmount</b>, <b>invoicedtns:pdfFilePath</b>, <b>invoicedtns:previousBalance</b>, <b>invoicedtns:totalAmount</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;invoicedtns:InvoiceReference</span><span class="tT"> </span><span class="tAN">xmlns:invoicedtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:accountID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:accountID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:currentAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:currentAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:currentTaxAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:currentTaxAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:discountAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:discountAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:dueDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:dueDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:generationDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:generationDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:invoiceDate</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:invoiceDate&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:invoiceID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:invoiceID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:paymentAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:paymentAmount&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:pdfFilePath</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:pdfFilePath&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:previousBalance</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:previousBalance&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:totalAmount</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:totalAmount&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/invoicedtns:InvoiceReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"InvoiceReference"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:InvoiceReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="PaymentPlan"></a><div class="componentTitle">Element <span class="qname">invoicedtns:PaymentPlan</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_PaymentPlan" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlan.jpeg" usemap="#Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlan" /><map name="Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlan" id="Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlan"><area alt="Invoices_types_1_0_xsd.tmp#PaymentPlanReference" href="Invoices_types_1_0_xsd.html#PaymentPlanReference" coords="143,43,471,65" /><area alt="Invoices_types_1_0_xsd.tmp#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" coords="129,3,312,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlan</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#PaymentPlanReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlanReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlan</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_PaymentPlan" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('model_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_PaymentPlan" style="display:block"><b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b> , <b>invoicedtns:name{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:state{0,1}</b> , <b>invoicedtns:numberOfPayments{0,1}</b> , <b>invoicedtns:creditLimitDecrease{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:creditLimitDecrease</b>, <b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:name</b>, <b>invoicedtns:numberOfPayments</b>, <b>invoicedtns:spid</b>, <b>invoicedtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_PaymentPlan" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;invoicedtns:PaymentPlan</span><span class="tT"> </span><span class="tAN">xmlns:invoicedtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:spid&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:state&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:numberOfPayments</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:numberOfPayments&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:creditLimitDecrease</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:creditLimitDecrease&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/invoicedtns:PaymentPlan&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('source_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_PaymentPlan" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"PaymentPlan"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:PaymentPlan"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference"></a><div class="componentTitle">Element <span class="qname">invoicedtns:PaymentPlanReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlanReference.jpeg" usemap="#Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlanReference" /><map name="Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlanReference" id="Invoices_types_1_0_xsd_Element_invoicedtns_PaymentPlanReference"><area alt="Invoices_types_1_0_xsd.tmp#PaymentPlanReference" href="Invoices_types_1_0_xsd.html#PaymentPlanReference" coords="182,3,418,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Invoices_types_1_0_xsd.html#PaymentPlanReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlanReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" style="display:block"><b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b> , <b>invoicedtns:name{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:name</b>, <b>invoicedtns:spid</b>, <b>invoicedtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;invoicedtns:PaymentPlanReference</span><span class="tT"> </span><span class="tAN">xmlns:invoicedtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:spid&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/invoicedtns:state&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/invoicedtns:PaymentPlanReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"PaymentPlanReference"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:PaymentPlanReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption"></a><div class="componentTitle">Element <span class="qname">invoicedtns:InvoiceDeliveryOption</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceDeliveryOption.jpeg" usemap="#Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceDeliveryOption" /><map name="Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceDeliveryOption" id="Invoices_types_1_0_xsd_Element_invoicedtns_InvoiceDeliveryOption"><area alt="Invoices_types_1_0_xsd.tmp#InvoiceDeliveryOption" href="Invoices_types_1_0_xsd.html#InvoiceDeliveryOption" coords="180,3,414,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Invoices_types_1_0_xsd.html#InvoiceDeliveryOption" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:InvoiceDeliveryOption</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" style="display:block"><b>invoicedtns:identifier</b> , <b>invoicedtns:deliveryType*</b> , <b>invoicedtns:name</b> , <b>invoicedtns:subfolderName</b> , <b>invoicedtns:nonResponsibleDefault</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:deliveryType</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:name</b>, <b>invoicedtns:nonResponsibleDefault</b>, <b>invoicedtns:subfolderName</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;invoicedtns:InvoiceDeliveryOption</span><span class="tT"> </span><span class="tAN">xmlns:invoicedtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/invoicedtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:deliveryType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/invoicedtns:deliveryType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/invoicedtns:name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:subfolderName</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/invoicedtns:subfolderName&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;invoicedtns:nonResponsibleDefault</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/invoicedtns:nonResponsibleDefault&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/invoicedtns:InvoiceDeliveryOption&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"InvoiceDeliveryOption"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:InvoiceDeliveryOption"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BillCycle"></a><div class="componentTitle">Complex Type <span class="qname">invoicedtns:BillCycle</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BillCycle');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BillCycle" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycle.jpeg" usemap="#Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycle" /><map name="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycle" id="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycle"><area alt="Invoices_types_1_0_xsd.tmp#BillCycleReference" href="Invoices_types_1_0_xsd.html#BillCycleReference" coords="130,3,435,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Invoices_types_1_0_xsd.html#BillCycleReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycleReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#BillCycleReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycleReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#BillCycle" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycle</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_BillCycle');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_BillCycle" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycle" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycle</a></b>, <b>tns:getBillCycleResponse/tns:return</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('model_BillCycle');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_BillCycle" style="display:block"><b>invoicedtns:dayOfMonth{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b> , <b>invoicedtns:billingMessage*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:billingMessage</b>, <b>invoicedtns:dayOfMonth</b>, <b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:spid</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BillCycle" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BillCycle');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BillCycle" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"BillCycle"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"invoicedtns:BillCycleReference"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"billingMessage"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"dtns:BillingMessageReference"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="BillCycleReference"></a><div class="componentTitle">Complex Type <span class="qname">invoicedtns:BillCycleReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_BillCycleReference" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycleReference.jpeg" usemap="#Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycleReference" /><map name="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycleReference" id="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_BillCycleReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_BillCycleReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#BillCycle" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycle</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_BillCycleReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:BillCycleReference</a></b>, <b>tns:listBillCyclesResponse/tns:return</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_BillCycleReference" style="display:block"><b>invoicedtns:dayOfMonth{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:dayOfMonth</b>, <b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:spid</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_BillCycleReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_BillCycleReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_BillCycleReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"BillCycleReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"dayOfMonth"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"description"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"identifier"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"spid"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="InvoiceReference"></a><div class="componentTitle">Complex Type <span class="qname">invoicedtns:InvoiceReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_InvoiceReference" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceReference.jpeg" usemap="#Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceReference" /><map name="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceReference" id="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_InvoiceReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:InvoiceReference</a></b>, <b>tns:listInvoicesResponse/tns:return</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="Invoices_types_2_0_xsd.html#Invoice" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2011/07" onclick="updatePageTitle('Documentation for Invoices_types_2_0.xsd')">invoicedtns:Invoice</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_InvoiceReference" style="display:block"><b>invoicedtns:accountID{0,1}</b> , <b>invoicedtns:currentAmount{0,1}</b> , <b>invoicedtns:currentTaxAmount{0,1}</b> , <b>invoicedtns:discountAmount{0,1}</b> , <b>invoicedtns:dueDate{0,1}</b> , <b>invoicedtns:generationDate{0,1}</b> , <b>invoicedtns:invoiceDate{0,1}</b> , <b>invoicedtns:invoiceID{0,1}</b> , <b>invoicedtns:paymentAmount{0,1}</b> , <b>invoicedtns:pdfFilePath{0,1}</b> , <b>invoicedtns:previousBalance{0,1}</b> , <b>invoicedtns:totalAmount{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:accountID</b>, <b>invoicedtns:currentAmount</b>, <b>invoicedtns:currentTaxAmount</b>, <b>invoicedtns:discountAmount</b>, <b>invoicedtns:dueDate</b>, <b>invoicedtns:generationDate</b>, <b>invoicedtns:invoiceDate</b>, <b>invoicedtns:invoiceID</b>, <b>invoicedtns:paymentAmount</b>, <b>invoicedtns:pdfFilePath</b>, <b>invoicedtns:previousBalance</b>, <b>invoicedtns:totalAmount</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_InvoiceReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_InvoiceReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_InvoiceReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"InvoiceReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"accountID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"currentAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"currentTaxAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"discountAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"dueDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"generationDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"invoiceDate"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:dateTime"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"invoiceID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"paymentAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"pdfFilePath"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"previousBalance"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"totalAmount"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="PaymentPlanReference"></a><div class="componentTitle">Complex Type <span class="qname">invoicedtns:PaymentPlanReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_PaymentPlanReference" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlanReference.jpeg" usemap="#Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlanReference" /><map name="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlanReference" id="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlanReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_PaymentPlanReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlanReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlanReference</a></b>, <b>tns:getPaymentPlanResponse/tns:return</b>, <b>tns:listPaymentPlansResponse/tns:return</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlan</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_PaymentPlanReference" style="display:block"><b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b> , <b>invoicedtns:name{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:name</b>, <b>invoicedtns:spid</b>, <b>invoicedtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_PaymentPlanReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_PaymentPlanReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_PaymentPlanReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"PaymentPlanReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"identifier"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"spid"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"name"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"description"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"state"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:PaymentPlanState"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="PaymentPlanState"></a><div class="componentTitle">Simple Type <span class="qname">invoicedtns:PaymentPlanState</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_PaymentPlanState" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_PaymentPlanState');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_PaymentPlanState" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Simple_Type_invoicedtns_PaymentPlanState.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_PaymentPlanState" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_PaymentPlanState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_PaymentPlanState" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_PaymentPlanState" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_PaymentPlanState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_PaymentPlanState" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>invoicedtns:PaymentPlanReference/invoicedtns:state</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_PaymentPlanState" type="image" src="img/btM.gif" value="-" onclick="switchState('source_PaymentPlanState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_PaymentPlanState" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"PaymentPlanState"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Active --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Deprecated --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="InvoiceDeliveryOption"></a><div class="componentTitle">Complex Type <span class="qname">invoicedtns:InvoiceDeliveryOption</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_InvoiceDeliveryOption" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceDeliveryOption.jpeg" usemap="#Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceDeliveryOption" /><map name="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceDeliveryOption" id="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_InvoiceDeliveryOption"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_InvoiceDeliveryOption" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_InvoiceDeliveryOption" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:InvoiceDeliveryOption</a></b>, <b>tns:listInvoiceDeliveryOptionsResponse/tns:return</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('model_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_InvoiceDeliveryOption" style="display:block"><b>invoicedtns:identifier</b> , <b>invoicedtns:deliveryType*</b> , <b>invoicedtns:name</b> , <b>invoicedtns:subfolderName</b> , <b>invoicedtns:nonResponsibleDefault</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:deliveryType</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:name</b>, <b>invoicedtns:nonResponsibleDefault</b>, <b>invoicedtns:subfolderName</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_InvoiceDeliveryOption" type="image" src="img/btM.gif" value="-" onclick="switchState('source_InvoiceDeliveryOption');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_InvoiceDeliveryOption" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"InvoiceDeliveryOption"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"identifier"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"deliveryType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> type=</span><span class="tAV">"invoicedtns:DeliveryType"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"name"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"subfolderName"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"nonResponsibleDefault"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="DeliveryType"></a><div class="componentTitle">Simple Type <span class="qname">invoicedtns:DeliveryType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_DeliveryType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_DeliveryType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_DeliveryType" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Simple_Type_invoicedtns_DeliveryType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_DeliveryType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_DeliveryType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_DeliveryType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_DeliveryType" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_DeliveryType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_DeliveryType" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>invoicedtns:InvoiceDeliveryOption/invoicedtns:deliveryType</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_DeliveryType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_DeliveryType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_DeliveryType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"DeliveryType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- EMAIL --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- POST --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="SettlementState"></a><div class="componentTitle">Simple Type <span class="qname">invoicedtns:SettlementState</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_SettlementState" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_SettlementState');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_SettlementState" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Simple_Type_invoicedtns_SettlementState.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_SettlementState" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_SettlementState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_SettlementState" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_SettlementState" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_SettlementState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_SettlementState" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>invoicedtns:Invoice/invoicedtns:settlementState</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_SettlementState" type="image" src="img/btM.gif" value="-" onclick="switchState('source_SettlementState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_SettlementState" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"SettlementState"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Not Processed --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Settlement Sent --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan"></a><div class="componentTitle">Complex Type <span class="qname">invoicedtns:PaymentPlan</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" style="display:block"><img alt="Diagram" border="0" src="img/Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlan.jpeg" usemap="#Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlan" /><map name="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlan" id="Invoices_types_1_0_xsd_Complex_Type_invoicedtns_PaymentPlan"><area alt="Invoices_types_1_0_xsd.tmp#PaymentPlanReference" href="Invoices_types_1_0_xsd.html#PaymentPlanReference" coords="153,3,481,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Invoices_types_1_0_xsd.html#PaymentPlanReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlanReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#PaymentPlanReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlanReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Invoices_types_1_0_xsd.html#http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlan</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="Invoices_types_1_0_xsd.html#PaymentPlan" target="mainFrame" title="http://soap.crmapi.util.redknee.com/invoices/xsd/2010/06" onclick="updatePageTitle('Documentation for Invoices_types_1_0.xsd')">invoicedtns:PaymentPlan</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" style="display:block"><b>invoicedtns:identifier{0,1}</b> , <b>invoicedtns:spid{0,1}</b> , <b>invoicedtns:name{0,1}</b> , <b>invoicedtns:description{0,1}</b> , <b>invoicedtns:state{0,1}</b> , <b>invoicedtns:numberOfPayments{0,1}</b> , <b>invoicedtns:creditLimitDecrease{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>invoicedtns:creditLimitDecrease</b>, <b>invoicedtns:description</b>, <b>invoicedtns:identifier</b>, <b>invoicedtns:name</b>, <b>invoicedtns:numberOfPayments</b>, <b>invoicedtns:spid</b>, <b>invoicedtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_invoices_xsd_2010_06_PaymentPlan" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"PaymentPlan"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"invoicedtns:PaymentPlanReference"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"numberOfPayments"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"creditLimitDecrease"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Invoices_types_1_0.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

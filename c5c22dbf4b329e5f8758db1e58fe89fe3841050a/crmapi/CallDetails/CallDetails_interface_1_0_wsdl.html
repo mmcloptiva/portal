@@ -1,0 +1,1632 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var messagesPartsBoxes= new Array('parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse', 
+				'parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse', 
+				'parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse', 
+				'parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse');
+var propertiesBoxes= new Array('properties_CallDetails_interface_1_0.wsdl', 
+				'properties_listCallTypesResponse', 
+				'properties_getCallTypeResponse', 
+				'properties_listUsageTypesResponse', 
+				'properties_getUsageTypeResponse');
+var usedByBoxes= new Array('usedBy_listCallTypesResponse', 
+				'usedBy_getCallTypeResponse', 
+				'usedBy_listUsageTypesResponse', 
+				'usedBy_getUsageTypeResponse', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse', 
+				'usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse', 
+				'usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse', 
+				'usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse', 
+				'usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse', 
+				'usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse');
+var sourceBoxes= new Array('source_listCallTypesResponse', 
+				'source_getCallTypeResponse', 
+				'source_listUsageTypesResponse', 
+				'source_getUsageTypeResponse', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse', 
+				'source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse', 
+				'source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse', 
+				'source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse', 
+				'source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse', 
+				'source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse');
+var instanceBoxes= new Array('instance_listCallTypesResponse', 
+				'instance_getCallTypeResponse', 
+				'instance_listUsageTypesResponse', 
+				'instance_getUsageTypeResponse');
+var diagramBoxes= new Array('diagram_listCallTypesResponse', 
+				'diagram_getCallTypeResponse', 
+				'diagram_listUsageTypesResponse', 
+				'diagram_getUsageTypeResponse', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse', 
+				'diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse');
+var annotationBoxes= new Array('documentation_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_CallDetails_interface_1_0.wsdl');
+var modelBoxes= new Array('model_listCallTypesResponse', 
+				'model_getCallTypeResponse', 
+				'model_listUsageTypesResponse', 
+				'model_getUsageTypeResponse', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse', 
+				'model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, messagesPartsBoxes);" class="control" /></span><span class="globalControlName">Parts </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, annotationBoxes);" class="control" /></span><span class="globalControlName">Documentation</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_CallDetails_interface_1_0.wsdl"></a><div class="componentTitle">Imported WSDL <span class="qname">CallDetails_interface_1_0.wsdl</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Documentation</b></div>
+                           <div class="floatRight"><input id="button_documentation_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_CallDetails_interface_1_0.wsdl" type="image" src="img/btM.gif" value="-" onclick="switchState('documentation_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_CallDetails_interface_1_0.wsdl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="documentation_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_CallDetails_interface_1_0.wsdl" style="display:block" class="annotation">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tT">Call Details API 1.0 for CRMAPI Version 2.1 on April 17th, 2009</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CallDetails_interface_1_0.wsdl"></a><div class="componentTitle">Inner Schema <span class="qname">CallDetails_interface_1_0.wsdl</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CallDetails_interface_1_0.wsdl" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CallDetails_interface_1_0.wsdl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CallDetails_interface_1_0.wsdl" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse"></a><div class="componentTitle">Message <span class="qname">tns:listCallTypesResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Parts</b></div>
+                           <div class="floatRight"><input id="button_parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">part1</td>
+                                    <td class="floatLeft" style="white-space: nowrap;">Element <b><a href="CallDetails_interface_1_0_wsdl.html#listCallTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listCallTypesResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Operation </td>
+                                    <td><b><a href="CallDetails_wsdl.html#CallDetailsPortType_v2_0_listCallTypes" target="mainFrame" title="No namespace" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">listCallTypes</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;wsdl:message</span><span class="tAN"> name=</span><span class="tAV">"listCallTypesResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:part</span><span class="tAN"> element=</span><span class="tAV">"tns:listCallTypesResponse"</span><span class="tAN"> name=</span><span class="tAV">"part1"</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/wsdl:message&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse"></a><div class="componentTitle">Message <span class="qname">tns:getCallTypeResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Parts</b></div>
+                           <div class="floatRight"><input id="button_parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">part1</td>
+                                    <td class="floatLeft" style="white-space: nowrap;">Element <b><a href="CallDetails_interface_1_0_wsdl.html#getCallTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getCallTypeResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Operation </td>
+                                    <td><b><a href="CallDetails_wsdl.html#CallDetailsPortType_v2_0_getCallType" target="mainFrame" title="No namespace" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">getCallType</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;wsdl:message</span><span class="tAN"> name=</span><span class="tAV">"getCallTypeResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:part</span><span class="tAN"> element=</span><span class="tAV">"tns:getCallTypeResponse"</span><span class="tAN"> name=</span><span class="tAV">"part1"</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/wsdl:message&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse"></a><div class="componentTitle">Message <span class="qname">tns:listUsageTypesResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Parts</b></div>
+                           <div class="floatRight"><input id="button_parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">part1</td>
+                                    <td class="floatLeft" style="white-space: nowrap;">Element <b><a href="CallDetails_interface_1_0_wsdl.html#listUsageTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listUsageTypesResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Operation </td>
+                                    <td><b><a href="CallDetails_wsdl.html#CallDetailsPortType_v2_0_listUsageTypes" target="mainFrame" title="No namespace" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">listUsageTypes</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;wsdl:message</span><span class="tAN"> name=</span><span class="tAV">"listUsageTypesResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:part</span><span class="tAN"> element=</span><span class="tAV">"tns:listUsageTypesResponse"</span><span class="tAN"> name=</span><span class="tAV">"part1"</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/wsdl:message&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse"></a><div class="componentTitle">Message <span class="qname">tns:getUsageTypeResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="wsdlComponent">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Parts</b></div>
+                           <div class="floatRight"><input id="button_parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="parts_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">part1</td>
+                                    <td class="floatLeft" style="white-space: nowrap;">Element <b><a href="CallDetails_interface_1_0_wsdl.html#getUsageTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getUsageTypeResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Operation </td>
+                                    <td><b><a href="CallDetails_wsdl.html#CallDetailsPortType_v2_0_getUsageType" target="mainFrame" title="No namespace" onclick="updatePageTitle('Documentation for CallDetails.wsdl')">getUsageType</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;wsdl:message</span><span class="tAN"> name=</span><span class="tAV">"getUsageTypeResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;wsdl:part</span><span class="tAN"> element=</span><span class="tAV">"tns:getUsageTypeResponse"</span><span class="tAN"> name=</span><span class="tAV">"part1"</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/wsdl:message&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="listCallTypesResponse"></a><div class="componentTitle">Element <span class="qname">tns:listCallTypesResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_listCallTypesResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Element_tns_listCallTypesResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Element_tns_listCallTypesResponse" /><map name="CallDetails_interface_1_0_wsdl_Element_tns_listCallTypesResponse" id="CallDetails_interface_1_0_wsdl_Element_tns_listCallTypesResponse"><area alt="CallDetails_interface_1_0_wsdl.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" coords="236,3,427,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listCallTypesResponse</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_listCallTypesResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_listCallTypesResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Message </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listCallTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listCallTypesResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_listCallTypesResponse" style="display:block"><b>tns:return*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_listCallTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;tns:listCallTypesResponse</span><span class="tT"> </span><span class="tAN">xmlns:tns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;tns:return</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/tns:return&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/tns:listCallTypesResponse&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_listCallTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"listCallTypesResponse"</span><span class="tAN"> type=</span><span class="tAV">"tns:listCallTypesResponse"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="getCallTypeResponse"></a><div class="componentTitle">Element <span class="qname">tns:getCallTypeResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_getCallTypeResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Element_tns_getCallTypeResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Element_tns_getCallTypeResponse" /><map name="CallDetails_interface_1_0_wsdl_Element_tns_getCallTypeResponse" id="CallDetails_interface_1_0_wsdl_Element_tns_getCallTypeResponse"><area alt="CallDetails_interface_1_0_wsdl.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" coords="231,3,417,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getCallTypeResponse</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_getCallTypeResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_getCallTypeResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Message </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getCallTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getCallTypeResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_getCallTypeResponse" style="display:block"><b>tns:return{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_getCallTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;tns:getCallTypeResponse</span><span class="tT"> </span><span class="tAN">xmlns:tns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;tns:return</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/tns:return&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/tns:getCallTypeResponse&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_getCallTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"getCallTypeResponse"</span><span class="tAN"> type=</span><span class="tAV">"tns:getCallTypeResponse"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="listUsageTypesResponse"></a><div class="componentTitle">Element <span class="qname">tns:listUsageTypesResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_listUsageTypesResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Element_tns_listUsageTypesResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Element_tns_listUsageTypesResponse" /><map name="CallDetails_interface_1_0_wsdl_Element_tns_listUsageTypesResponse" id="CallDetails_interface_1_0_wsdl_Element_tns_listUsageTypesResponse"><area alt="CallDetails_interface_1_0_wsdl.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" coords="249,3,453,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listUsageTypesResponse</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_listUsageTypesResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_listUsageTypesResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Message </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_listUsageTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listUsageTypesResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_listUsageTypesResponse" style="display:block"><b>tns:return*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_listUsageTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;tns:listUsageTypesResponse</span><span class="tT"> </span><span class="tAN">xmlns:tns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;tns:return</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/tns:return&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/tns:listUsageTypesResponse&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_listUsageTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"listUsageTypesResponse"</span><span class="tAN"> type=</span><span class="tAV">"tns:listUsageTypesResponse"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="getUsageTypeResponse"></a><div class="componentTitle">Element <span class="qname">tns:getUsageTypeResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_getUsageTypeResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Element_tns_getUsageTypeResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Element_tns_getUsageTypeResponse" /><map name="CallDetails_interface_1_0_wsdl_Element_tns_getUsageTypeResponse" id="CallDetails_interface_1_0_wsdl_Element_tns_getUsageTypeResponse"><area alt="CallDetails_interface_1_0_wsdl.tmp#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" coords="244,3,443,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="CallDetails_interface_1_0_wsdl.html#http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getUsageTypeResponse</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_getUsageTypeResponse" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_getUsageTypeResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Message </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#Message_FROM_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_PQN_getUsageTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getUsageTypeResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_getUsageTypeResponse" style="display:block"><b>tns:return{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_getUsageTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;tns:getUsageTypeResponse</span><span class="tT"> </span><span class="tAN">xmlns:tns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;tns:return</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/tns:return&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/tns:getUsageTypeResponse&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_getUsageTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"getUsageTypeResponse"</span><span class="tAN"> type=</span><span class="tAV">"tns:getUsageTypeResponse"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse"></a><div class="componentTitle">Complex Type <span class="qname">tns:listCallTypesResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Complex_Type_tns_listCallTypesResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Complex_Type_tns_listCallTypesResponse" /><map name="CallDetails_interface_1_0_wsdl_Complex_Type_tns_listCallTypesResponse" id="CallDetails_interface_1_0_wsdl_Complex_Type_tns_listCallTypesResponse"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#listCallTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listCallTypesResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" style="display:block"><b>tns:return*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listCallTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"listCallTypesResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> name=</span><span class="tAV">"return"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallTypeReference"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse"></a><div class="componentTitle">Complex Type <span class="qname">tns:getCallTypeResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Complex_Type_tns_getCallTypeResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Complex_Type_tns_getCallTypeResponse" /><map name="CallDetails_interface_1_0_wsdl_Complex_Type_tns_getCallTypeResponse" id="CallDetails_interface_1_0_wsdl_Complex_Type_tns_getCallTypeResponse"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#getCallTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getCallTypeResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" style="display:block"><b>tns:return{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getCallTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"getCallTypeResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> name=</span><span class="tAV">"return"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:CallType"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse"></a><div class="componentTitle">Complex Type <span class="qname">tns:listUsageTypesResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Complex_Type_tns_listUsageTypesResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Complex_Type_tns_listUsageTypesResponse" /><map name="CallDetails_interface_1_0_wsdl_Complex_Type_tns_listUsageTypesResponse" id="CallDetails_interface_1_0_wsdl_Complex_Type_tns_listUsageTypesResponse"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#listUsageTypesResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:listUsageTypesResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" style="display:block"><b>tns:return*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_listUsageTypesResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"listUsageTypesResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> name=</span><span class="tAV">"return"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:UsageTypeReference"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse"></a><div class="componentTitle">Complex Type <span class="qname">tns:getUsageTypeResponse</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" style="display:block"><img alt="Diagram" border="0" src="img/CallDetails_interface_1_0_wsdl_Complex_Type_tns_getUsageTypeResponse.jpeg" usemap="#CallDetails_interface_1_0_wsdl_Complex_Type_tns_getUsageTypeResponse" /><map name="CallDetails_interface_1_0_wsdl_Complex_Type_tns_getUsageTypeResponse" id="CallDetails_interface_1_0_wsdl_Complex_Type_tns_getUsageTypeResponse"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="CallDetails_interface_1_0_wsdl.html#getUsageTypeResponse" target="mainFrame" title="http://soap.crmapi.util.redknee.com/calldetails/xsd/CallDetails-v1.0" onclick="updatePageTitle('Documentation for CallDetails_interface_1_0.wsdl')">tns:getUsageTypeResponse</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" style="display:block"><b>tns:return{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>tns:return</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_calldetails_xsd_CallDetails-v1.0_getUsageTypeResponse" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"getUsageTypeResponse"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> name=</span><span class="tAV">"return"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> type=</span><span class="tAV">"calldetaildtns:UsageType"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/CallDetails_interface_1_0.wsdl</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

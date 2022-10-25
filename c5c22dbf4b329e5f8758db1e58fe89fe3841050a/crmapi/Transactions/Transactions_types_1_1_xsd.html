@@ -1,0 +1,1939 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_Transactions_types_1_1.xsd', 
+				'properties_AdjustmentType', 
+				'properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference', 
+				'properties_GLCodeQueryResult', 
+				'properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference', 
+				'properties_PaymentAgentReference');
+var facetsBoxes= new Array('facets_ProfileType', 
+				'facets_AdjustmentAction', 
+				'facets_AdjustmentTypeState', 
+				'facets_GLCodeState');
+var usedByBoxes= new Array('usedBy_ProfileType', 
+				'usedBy_AdjustmentAction', 
+				'usedBy_AdjustmentTypeState', 
+				'usedBy_GLCodeState', 
+				'usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType', 
+				'usedBy_AdjustmentTypeReference', 
+				'usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult', 
+				'usedBy_GLCodeReference', 
+				'usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');
+var sourceBoxes= new Array('source_AdjustmentType', 
+				'source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference', 
+				'source_GLCodeQueryResult', 
+				'source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference', 
+				'source_PaymentAgentReference', 
+				'source_ProfileType', 
+				'source_AdjustmentAction', 
+				'source_AdjustmentTypeState', 
+				'source_GLCodeState', 
+				'source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType', 
+				'source_AdjustmentTypeReference', 
+				'source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult', 
+				'source_GLCodeReference', 
+				'source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');
+var instanceBoxes= new Array('instance_AdjustmentType', 
+				'instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference', 
+				'instance_GLCodeQueryResult', 
+				'instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference', 
+				'instance_PaymentAgentReference');
+var diagramBoxes= new Array('diagram_AdjustmentType', 
+				'diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference', 
+				'diagram_GLCodeQueryResult', 
+				'diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference', 
+				'diagram_PaymentAgentReference', 
+				'diagram_ProfileType', 
+				'diagram_AdjustmentAction', 
+				'diagram_AdjustmentTypeState', 
+				'diagram_GLCodeState', 
+				'diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType', 
+				'diagram_AdjustmentTypeReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult', 
+				'diagram_GLCodeReference', 
+				'diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');
+var modelBoxes= new Array('model_AdjustmentType', 
+				'model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference', 
+				'model_GLCodeQueryResult', 
+				'model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference', 
+				'model_PaymentAgentReference', 
+				'model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType', 
+				'model_AdjustmentTypeReference', 
+				'model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult', 
+				'model_GLCodeReference', 
+				'model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, facetsBoxes);" class="control" /></span><span class="globalControlName">Facets </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="Transactions_types_1_1.xsd"></a><div class="componentTitle">Imported schema <span class="qname">Transactions_types_1_1.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_Transactions_types_1_1.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_Transactions_types_1_1.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_Transactions_types_1_1.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="AdjustmentType"></a><div class="componentTitle">Element <span class="qname">transactiondtns:AdjustmentType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_AdjustmentType" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentType.jpeg" usemap="#Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentType" /><map name="Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentType" id="Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentType"><area alt="Transactions_types_1_1_xsd.tmp#AdjustmentTypeReference" href="Transactions_types_1_1_xsd.html#AdjustmentTypeReference" coords="164,43,536,65" /><area alt="Transactions_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" coords="150,3,377,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Transactions_types_1_1_xsd.html#AdjustmentTypeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentTypeReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentType</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_AdjustmentType" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('model_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_AdjustmentType" style="display:block"><b>transactiondtns:category{0,1}</b> , <b>transactiondtns:description{0,1}</b> , <b>transactiondtns:identifier{0,1}</b> , <b>transactiondtns:name{0,1}</b> , <b>transactiondtns:ownerType{0,1}</b> , <b>transactiondtns:parent{0,1}</b> , <b>transactiondtns:state{0,1}</b> , <b>transactiondtns:action{0,1}</b> , <b>transactiondtns:system{0,1}</b> , <b>transactiondtns:provisionToOCG{0,1}</b> , <b>transactiondtns:glCode{0,1}</b> , <b>transactiondtns:invoiceDescription{0,1}</b> , <b>transactiondtns:spid{0,1}</b> , <b>transactiondtns:taxAuthority{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:action</b>, <b>transactiondtns:category</b>, <b>transactiondtns:description</b>, <b>transactiondtns:glCode</b>, <b>transactiondtns:identifier</b>, <b>transactiondtns:invoiceDescription</b>, <b>transactiondtns:name</b>, <b>transactiondtns:ownerType</b>, <b>transactiondtns:parent</b>, <b>transactiondtns:provisionToOCG</b>, <b>transactiondtns:spid</b>, <b>transactiondtns:state</b>, <b>transactiondtns:system</b>, <b>transactiondtns:taxAuthority</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_AdjustmentType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;transactiondtns:AdjustmentType</span><span class="tT"> </span><span class="tAN">xmlns:transactiondtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:category</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:category&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:ownerType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:ownerType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:parent</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:parent&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:state&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:action</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:action&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:system</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:system&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:provisionToOCG</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:provisionToOCG&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:glCode</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:glCode&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:invoiceDescription</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:invoiceDescription&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:spid&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:taxAuthority</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:taxAuthority&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/transactiondtns:AdjustmentType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_AdjustmentType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"AdjustmentType"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:AdjustmentType"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference"></a><div class="componentTitle">Element <span class="qname">transactiondtns:AdjustmentTypeReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentTypeReference.jpeg" usemap="#Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentTypeReference" /><map name="Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentTypeReference" id="Transactions_types_1_1_xsd_Element_transactiondtns_AdjustmentTypeReference"><area alt="Transactions_types_1_1_xsd.tmp#AdjustmentTypeReference" href="Transactions_types_1_1_xsd.html#AdjustmentTypeReference" coords="203,3,483,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Transactions_types_1_1_xsd.html#AdjustmentTypeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentTypeReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" style="display:block"><b>transactiondtns:category{0,1}</b> , <b>transactiondtns:description{0,1}</b> , <b>transactiondtns:identifier{0,1}</b> , <b>transactiondtns:name{0,1}</b> , <b>transactiondtns:ownerType{0,1}</b> , <b>transactiondtns:parent{0,1}</b> , <b>transactiondtns:state{0,1}</b> , <b>transactiondtns:action{0,1}</b> , <b>transactiondtns:system{0,1}</b> , <b>transactiondtns:provisionToOCG{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:action</b>, <b>transactiondtns:category</b>, <b>transactiondtns:description</b>, <b>transactiondtns:identifier</b>, <b>transactiondtns:name</b>, <b>transactiondtns:ownerType</b>, <b>transactiondtns:parent</b>, <b>transactiondtns:provisionToOCG</b>, <b>transactiondtns:state</b>, <b>transactiondtns:system</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;transactiondtns:AdjustmentTypeReference</span><span class="tT"> </span><span class="tAN">xmlns:transactiondtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:category</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:category&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:identifier</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:identifier&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:ownerType</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:ownerType&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:parent</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:parent&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:state&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:action</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:action&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:system</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:system&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:provisionToOCG</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:provisionToOCG&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/transactiondtns:AdjustmentTypeReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"AdjustmentTypeReference"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:AdjustmentTypeReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="GLCodeQueryResult"></a><div class="componentTitle">Element <span class="qname">transactiondtns:GLCodeQueryResult</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_GLCodeQueryResult" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeQueryResult.jpeg" usemap="#Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeQueryResult" /><map name="Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeQueryResult" id="Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeQueryResult"><area alt="Transactions_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" coords="170,3,417,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:GLCodeQueryResult</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_GLCodeQueryResult" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('model_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_GLCodeQueryResult" style="display:block"><b>transactiondtns:pageKey{0,1}</b> , <b>transactiondtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:pageKey</b>, <b>transactiondtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_GLCodeQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;transactiondtns:GLCodeQueryResult</span><span class="tT"> </span><span class="tAN">xmlns:transactiondtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:pageKey</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:pageKey&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:references</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/transactiondtns:references&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/transactiondtns:GLCodeQueryResult&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('source_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_GLCodeQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"GLCodeQueryResult"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:GLCodeQueryResult"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference"></a><div class="componentTitle">Element <span class="qname">transactiondtns:GLCodeReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeReference.jpeg" usemap="#Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeReference" /><map name="Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeReference" id="Transactions_types_1_1_xsd_Element_transactiondtns_GLCodeReference"><area alt="Transactions_types_1_1_xsd.tmp#GLCodeReference" href="Transactions_types_1_1_xsd.html#GLCodeReference" coords="157,3,391,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Transactions_types_1_1_xsd.html#GLCodeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:GLCodeReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" style="display:block"><b>transactiondtns:creditGLCode{0,1}</b> , <b>transactiondtns:debitGLCode{0,1}</b> , <b>transactiondtns:description{0,1}</b> , <b>transactiondtns:glAccountNumber{0,1}</b> , <b>transactiondtns:glCode{0,1}</b> , <b>transactiondtns:glDepartmentID{0,1}</b> , <b>transactiondtns:glProductCode{0,1}</b> , <b>transactiondtns:spid{0,1}</b> , <b>transactiondtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:creditGLCode</b>, <b>transactiondtns:debitGLCode</b>, <b>transactiondtns:description</b>, <b>transactiondtns:glAccountNumber</b>, <b>transactiondtns:glCode</b>, <b>transactiondtns:glDepartmentID</b>, <b>transactiondtns:glProductCode</b>, <b>transactiondtns:spid</b>, <b>transactiondtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;transactiondtns:GLCodeReference</span><span class="tT"> </span><span class="tAN">xmlns:transactiondtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:creditGLCode</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:creditGLCode&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:debitGLCode</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:debitGLCode&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:glAccountNumber</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:glAccountNumber&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:glCode</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:glCode&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:glDepartmentID</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:glDepartmentID&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:glProductCode</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:glProductCode&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:spid&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:state&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/transactiondtns:GLCodeReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"GLCodeReference"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:GLCodeReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="PaymentAgentReference"></a><div class="componentTitle">Element <span class="qname">transactiondtns:PaymentAgentReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_PaymentAgentReference" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Element_transactiondtns_PaymentAgentReference.jpeg" usemap="#Transactions_types_1_1_xsd_Element_transactiondtns_PaymentAgentReference" /><map name="Transactions_types_1_1_xsd_Element_transactiondtns_PaymentAgentReference" id="Transactions_types_1_1_xsd_Element_transactiondtns_PaymentAgentReference"><area alt="Transactions_types_1_1_xsd.tmp#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" coords="192,3,461,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:PaymentAgentReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_PaymentAgentReference" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_PaymentAgentReference" style="display:block"><b>transactiondtns:description{0,1}</b> , <b>transactiondtns:name{0,1}</b> , <b>transactiondtns:spid{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:description</b>, <b>transactiondtns:name</b>, <b>transactiondtns:spid</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_PaymentAgentReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;transactiondtns:PaymentAgentReference</span><span class="tT"> </span><span class="tAN">xmlns:transactiondtns=</span><span class="tAV">"http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:description</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:description&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;transactiondtns:spid</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/transactiondtns:spid&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/transactiondtns:PaymentAgentReference&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_PaymentAgentReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"PaymentAgentReference"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:PaymentAgentReference"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="ProfileType"></a><div class="componentTitle">Simple Type <span class="qname">transactiondtns:ProfileType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_ProfileType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_ProfileType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_ProfileType" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Simple_Type_transactiondtns_ProfileType.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_ProfileType" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_ProfileType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_ProfileType" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_ProfileType" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_ProfileType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_ProfileType" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>tns:getTransaction/tns:ownerType</b>, <b>tns:listAccountTransactions/tns:ownerType</b>, <b>tns:listDetailedAccountTransactions/tns:ownerType</b>, <b>transactiondtns:AdjustmentTypeReference/transactiondtns:ownerType</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_ProfileType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_ProfileType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_ProfileType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"ProfileType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Subscription --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Account --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="AdjustmentAction"></a><div class="componentTitle">Simple Type <span class="qname">transactiondtns:AdjustmentAction</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_AdjustmentAction" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_AdjustmentAction');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_AdjustmentAction" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Simple_Type_transactiondtns_AdjustmentAction.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_AdjustmentAction" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_AdjustmentAction');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_AdjustmentAction" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_AdjustmentAction" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_AdjustmentAction');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_AdjustmentAction" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>transactiondtns:AdjustmentTypeReference/transactiondtns:action</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_AdjustmentAction" type="image" src="img/btM.gif" value="-" onclick="switchState('source_AdjustmentAction');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_AdjustmentAction" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"AdjustmentAction"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Credit --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Debit --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Either --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="AdjustmentTypeState"></a><div class="componentTitle">Simple Type <span class="qname">transactiondtns:AdjustmentTypeState</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_AdjustmentTypeState" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_AdjustmentTypeState');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_AdjustmentTypeState" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Simple_Type_transactiondtns_AdjustmentTypeState.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_AdjustmentTypeState" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_AdjustmentTypeState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_AdjustmentTypeState" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_AdjustmentTypeState" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_AdjustmentTypeState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_AdjustmentTypeState" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>transactiondtns:AdjustmentTypeReference/transactiondtns:state</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_AdjustmentTypeState" type="image" src="img/btM.gif" value="-" onclick="switchState('source_AdjustmentTypeState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_AdjustmentTypeState" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"AdjustmentTypeState"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Active --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Inactive --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Deprecated --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="GLCodeState"></a><div class="componentTitle">Simple Type <span class="qname">transactiondtns:GLCodeState</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_GLCodeState" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_GLCodeState');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_GLCodeState" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Simple_Type_transactiondtns_GLCodeState.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:long</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_GLCodeState" type="image" src="img/btM.gif" value="-" onclick="switchState('facets_GLCodeState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_GLCodeState" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>0</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td width="30%"><b>1</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_GLCodeState" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_GLCodeState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_GLCodeState" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b>transactiondtns:GLCodeReference/transactiondtns:state</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_GLCodeState" type="image" src="img/btM.gif" value="-" onclick="switchState('source_GLCodeState');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_GLCodeState" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"GLCodeState"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:long"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Active --&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"1"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- Deprecated --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType"></a><div class="componentTitle">Complex Type <span class="qname">transactiondtns:AdjustmentType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentType.jpeg" usemap="#Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentType" /><map name="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentType" id="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentType"><area alt="Transactions_types_1_1_xsd.tmp#AdjustmentTypeReference" href="Transactions_types_1_1_xsd.html#AdjustmentTypeReference" coords="174,3,546,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="Transactions_types_1_1_xsd.html#AdjustmentTypeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentTypeReference</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="Transactions_types_1_1_xsd.html#AdjustmentTypeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentTypeReference</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentType</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>tns:getAdjustmentTypeResponse/tns:return</b>, <b><a href="Transactions_types_1_1_xsd.html#AdjustmentType" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentType</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" style="display:block"><b>transactiondtns:category{0,1}</b> , <b>transactiondtns:description{0,1}</b> , <b>transactiondtns:identifier{0,1}</b> , <b>transactiondtns:name{0,1}</b> , <b>transactiondtns:ownerType{0,1}</b> , <b>transactiondtns:parent{0,1}</b> , <b>transactiondtns:state{0,1}</b> , <b>transactiondtns:action{0,1}</b> , <b>transactiondtns:system{0,1}</b> , <b>transactiondtns:provisionToOCG{0,1}</b> , <b>transactiondtns:glCode{0,1}</b> , <b>transactiondtns:invoiceDescription{0,1}</b> , <b>transactiondtns:spid{0,1}</b> , <b>transactiondtns:taxAuthority{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:action</b>, <b>transactiondtns:category</b>, <b>transactiondtns:description</b>, <b>transactiondtns:glCode</b>, <b>transactiondtns:identifier</b>, <b>transactiondtns:invoiceDescription</b>, <b>transactiondtns:name</b>, <b>transactiondtns:ownerType</b>, <b>transactiondtns:parent</b>, <b>transactiondtns:provisionToOCG</b>, <b>transactiondtns:spid</b>, <b>transactiondtns:state</b>, <b>transactiondtns:system</b>, <b>transactiondtns:taxAuthority</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"AdjustmentType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"transactiondtns:AdjustmentTypeReference"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"glCode"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"invoiceDescription"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"spid"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"taxAuthority"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="AdjustmentTypeReference"></a><div class="componentTitle">Complex Type <span class="qname">transactiondtns:AdjustmentTypeReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_AdjustmentTypeReference" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentTypeReference.jpeg" usemap="#Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentTypeReference" /><map name="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentTypeReference" id="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_AdjustmentTypeReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_AdjustmentTypeReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Complex Type </td>
+                                    <td><b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentType" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentType</a></b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>tns:listAdjustmentTypesResponse/tns:return</b>, <b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_AdjustmentTypeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:AdjustmentTypeReference</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_AdjustmentTypeReference" style="display:block"><b>transactiondtns:category{0,1}</b> , <b>transactiondtns:description{0,1}</b> , <b>transactiondtns:identifier{0,1}</b> , <b>transactiondtns:name{0,1}</b> , <b>transactiondtns:ownerType{0,1}</b> , <b>transactiondtns:parent{0,1}</b> , <b>transactiondtns:state{0,1}</b> , <b>transactiondtns:action{0,1}</b> , <b>transactiondtns:system{0,1}</b> , <b>transactiondtns:provisionToOCG{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:action</b>, <b>transactiondtns:category</b>, <b>transactiondtns:description</b>, <b>transactiondtns:identifier</b>, <b>transactiondtns:name</b>, <b>transactiondtns:ownerType</b>, <b>transactiondtns:parent</b>, <b>transactiondtns:provisionToOCG</b>, <b>transactiondtns:state</b>, <b>transactiondtns:system</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_AdjustmentTypeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_AdjustmentTypeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_AdjustmentTypeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"AdjustmentTypeReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"category"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"description"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"identifier"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"name"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"ownerType"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:ProfileType"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"parent"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:long"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"state"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:AdjustmentTypeState"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"action"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:AdjustmentAction"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"system"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"provisionToOCG"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:boolean"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult"></a><div class="componentTitle">Complex Type <span class="qname">transactiondtns:GLCodeQueryResult</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeQueryResult.jpeg" usemap="#Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeQueryResult" /><map name="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeQueryResult" id="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeQueryResult"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>tns:listGLCodesResponse/tns:return</b>, <b><a href="Transactions_types_1_1_xsd.html#GLCodeQueryResult" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:GLCodeQueryResult</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" style="display:block"><b>transactiondtns:pageKey{0,1}</b> , <b>transactiondtns:references*</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:pageKey</b>, <b>transactiondtns:references</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeQueryResult" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"GLCodeQueryResult"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"pageKey"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tAN"> name=</span><span class="tAV">"references"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:GLCodeReference"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="GLCodeReference"></a><div class="componentTitle">Complex Type <span class="qname">transactiondtns:GLCodeReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_GLCodeReference" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeReference.jpeg" usemap="#Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeReference" /><map name="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeReference" id="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_GLCodeReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_GLCodeReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>transactiondtns:GLCodeQueryResult/transactiondtns:references</b>, <b><a href="Transactions_types_1_1_xsd.html#http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_GLCodeReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:GLCodeReference</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_GLCodeReference" style="display:block"><b>transactiondtns:creditGLCode{0,1}</b> , <b>transactiondtns:debitGLCode{0,1}</b> , <b>transactiondtns:description{0,1}</b> , <b>transactiondtns:glAccountNumber{0,1}</b> , <b>transactiondtns:glCode{0,1}</b> , <b>transactiondtns:glDepartmentID{0,1}</b> , <b>transactiondtns:glProductCode{0,1}</b> , <b>transactiondtns:spid{0,1}</b> , <b>transactiondtns:state{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:creditGLCode</b>, <b>transactiondtns:debitGLCode</b>, <b>transactiondtns:description</b>, <b>transactiondtns:glAccountNumber</b>, <b>transactiondtns:glCode</b>, <b>transactiondtns:glDepartmentID</b>, <b>transactiondtns:glProductCode</b>, <b>transactiondtns:spid</b>, <b>transactiondtns:state</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_GLCodeReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_GLCodeReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_GLCodeReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"GLCodeReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"creditGLCode"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"debitGLCode"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"description"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"glAccountNumber"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"glCode"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"glDepartmentID"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"glProductCode"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"spid"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"state"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"transactiondtns:GLCodeState"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference"></a><div class="componentTitle">Complex Type <span class="qname">transactiondtns:PaymentAgentReference</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" style="display:block"><img alt="Diagram" border="0" src="img/Transactions_types_1_1_xsd_Complex_Type_transactiondtns_PaymentAgentReference.jpeg" usemap="#Transactions_types_1_1_xsd_Complex_Type_transactiondtns_PaymentAgentReference" /><map name="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_PaymentAgentReference" id="Transactions_types_1_1_xsd_Complex_Type_transactiondtns_PaymentAgentReference"></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Elements </td>
+                                    <td><b>tns:listPaymentAgentsResponse/tns:return</b>, <b><a href="Transactions_types_1_1_xsd.html#PaymentAgentReference" target="mainFrame" title="http://soap.crmapi.util.redknee.com/transactions/xsd/2009/04" onclick="updatePageTitle('Documentation for Transactions_types_1_1.xsd')">transactiondtns:PaymentAgentReference</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" style="display:block"><b>transactiondtns:description{0,1}</b> , <b>transactiondtns:name{0,1}</b> , <b>transactiondtns:spid{0,1}</b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b>transactiondtns:description</b>, <b>transactiondtns:name</b>, <b>transactiondtns:spid</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" type="image" src="img/btM.gif" value="-" onclick="switchState('source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_http___soap.crmapi.util.redknee.com_transactions_xsd_2009_04_PaymentAgentReference" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"PaymentAgentReference"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"description"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"name"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"spid"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> type=</span><span class="tAV">"xs:int"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Location</b></td>
+                        <td>file:/Users/michael/Documents/GitHub/orms-interface-crmapi/src/wsdl/3_0/Transactions_types_1_1.xsd</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">WSDL documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

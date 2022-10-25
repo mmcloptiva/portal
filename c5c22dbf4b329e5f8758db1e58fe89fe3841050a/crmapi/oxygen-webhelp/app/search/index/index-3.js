@@ -1,0 +1,4 @@
+define(function () {
+// Auto generated index for searching.
+return {"paymentgatewayintegration.wsdl":"15*20*1","pinmanagement":"16*20*2","pinmanagement.wsdl":"16*20*1","provisioningcommand":"17*20*2","provisioningcommand.wsdl":"17*20*1","sensitive":"22*20*1","servicesandbundles":"18*20*2","servicesandbundles.wsdl":"18*20*1","subscriptions":"19*20*2","subscriptions.wsdl":"19*20*1","tcbgeneralintegration":"20*20*2","tcbgeneralintegration.wsdl":"20*20*1","transactions":"21*20*2","transactions.wsdl":"21*20*1","wsdl":"0*20*3,1*20*3,2*20*3,3*20*3,4*20*3,5*20*3,6*20*3,7*20*3,8*20*3,9*20*3,10*20*3,11*20*3,12*20*3,13*20*3,14*20*3,15*20*3,16*20*3,17*20*3,18*20*3,19*20*3,20*20*3,21*20*3"};
+});
