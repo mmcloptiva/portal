@@ -615,7 +615,8 @@ td.componentGroup {
     The footer. 
 -----------------*/
 .footer{
-    margin-top:3em;
+    /*margin-top:3em;*/
+    display: none;
 }
 .redX{
     color:red;
